@@ -1,0 +1,56 @@
+@import "variables";
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+    .header{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        .bg {
+            background-color: $main-color;
+            height: 40vh;
+        }
+
+        .jumbotron {
+            background-image: url("../images/evanaFoto.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 91vw;
+            height: 90vh;
+            position: absolute;
+            top: 5vh;
+            left: 2vw;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 75vh;
+                width: 50%;
+                border-top: 10vh solid rgba(114, 107, 177, 0.8);
+                border-right: 6vw solid rgba(114, 107, 177, 0.8);
+                border-bottom: 10vh solid rgba(114, 107, 177, 0.8);
+                top: 0;
+                right: 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 89%;
+                // background-image: url("../images/memphis.png");
+                background-color: $second-color;
+                opacity: 0.6;
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 10vh;
+                left: 4vw;
+                height: 75vh;
+            }
+        }
+    }
+}

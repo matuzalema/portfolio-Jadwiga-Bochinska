@@ -1,6 +1,6 @@
 @import "variables";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,374 +9,43 @@
 body {
   margin: 0;
   padding: 0;
-
+  font-family: "Roboto", sans-serif;
+  
   .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
+}
 
-  .fiveth-header {
-    color: $main-color;
-    font-size: 36px;
-    font-weight: 800;
-    font-family: "Poppins", sans-serif;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .sixth-header {
-    color: $font-color;
-    font-size: 24px;
-    font-weight: 800;
-  }
 
   // ================== section header ===========================
+ header {
+   background-image: url(../images/img-05.jpg);
+   height: 100vh;
 
-  .header {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    position: relative;
-    font-family: "Roboto", sans-serif;
+    ul {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
 
-    &::before {
-      content: "";
-      background-color: $main-color;
-      height: 40vh;
-    }
+      li {
+        margin: 0;
+        list-style-type: none;
+        
 
-    &::after {
-      content: "";
-      background-color: $second-color;
-      height: 60vh;
-    }
-
-    .jumbotron {
-      background-image: url("../images/evanaFoto.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 91vw;
-      height: 95vh;
-      position: absolute;
-      top: 5vh;
-      left: 4.5vw;
-
-      &::after {
-        content: "";
-        position: absolute;
-        height: 75vh;
-        width: 45%;
-        border-top: 10vh solid rgba(114, 107, 177, 0.8);
-        border-right: 5vw solid rgba(114, 107, 177, 0.8);
-        border-bottom: 10vh solid rgba(114, 107, 177, 0.8);
-        top: 0;
-        right: 0;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 89%;
-        background-image: url("../images/memphis.png");
-        background-color: rgba(207, 204, 255, 0.5);
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: 10vh;
-        left: 5vw;
-        height: 75vh;
-      }
-
-      .header-inf {
-        border: 9px solid #fff;
-        max-width: 417px;
-        margin-top: 20vh;
-        margin-left: 10%;
-        padding: 20px 0 20px 55px;
-        min-height: 300px;
-        position: relative;
-
-        &::before {
-          content: "Front-End Developer";
-          position: absolute;
-          font-family: "Poppins", sans-serif;
-          color: #4d487a;
-          top: 80px;
-          width: 600px;
-          left: 55px;
-          font-size: 48px;
-          font-weight: 800;
-        }
-
-        &::after {
-          content: "FRONT";
-          position: absolute;
-          color: rgba(114, 107, 177, 0.2);
-          top: 150px;
-          width: 600px;
-          left: 100%;
-          font-size: 15em;
-          font-weight: 800;
-        }
-
-        .header-text {
-          position: relative;
-        }
-
-        .link {
-          margin-top: 55%;
-          display: block;
+        a {
+          color: $second-color;
           text-decoration: none;
-          color: #000;
-          font-weight: 600;
-          position: relative;
-          z-index: 0;
-
-          &::after {
-            content: "";
-            background-color: #fff;
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: -9px;
-            left: 45px;
-            z-index: -1;
-          }
-        }
-
-        .introduce {
-          color: #fff;
-          text-transform: uppercase;
-          font-size: 20px;
-          font-weight: 600;
-          position: relative;
-          font-family: "Poppins", sans-serif;
-
-          &::after {
-            content: "Witam w moim portfolio. Zapraszam do zapoznania się z moimi projektami oraz repozytorium na github.";
-            position: absolute;
-            top: 120px;
-            left: 0;
-            font-size: 16px;
-            text-transform: none;
-            min-width: 500px;
-            color: $font-color;
-            font-weight: 400;
-            line-height: 25px;
-            font-family: roboto;
-          }
-        }
-
-        p {
-          color: $font-color;
+          margin-right: 20px;
         }
       }
     }
-  }
-}
+ }
 
 // ================== section about ===========================
 
-.about {
-  display: flex;
-  flex-direction: row;
 
-  .about-left {
-    padding-top: 30px;
-    margin-left: 228px;
-    margin-right: 60px;
-    flex: 2;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      width: 600px;
-      content: "FRONT-END";
-      color: $main-color;
-      font-size: 86px;
-      font-weight: 900;
-      font-family: Poppins;
-      text-shadow: 0 12px 28px rgba(6, 7, 7, 0.12);
-      transform: rotate(-90deg);
-      top: 220px;
-      right: 343px;
-    }
-
-    &::after {
-      position: absolute;
-      content: "F";
-      color: #f5f9fd;
-      top: -223px;
-      left: -390px;
-      font-size: 45em;
-      font-weight: 700;
-      font-family: "Poppins", sans-serif;
-      transform: scalex(-1);
-      z-index: -1;
-    }
-
-    .first-header {
-      color: #222222;
-      font-family: "Poppins", sans-serif;
-      font-size: 50px;
-      width: 422px;
-      font-weight: 700;
-      line-height: 70px;
-    }
-
-    .third-header {
-      width: 422px;
-      font-size: 18px;
-      font-family: "Roboto";
-      font-weight: 700;
-      line-height: 28px;
-      span {
-        color: $main-color;
-      }
-    }
-
-    .more {
-      position: relative;
-      display: block;
-      text-decoration: none;
-      font-family: "Roboto";
-      color: #000;
-      font-weight: 600;
-      position: relative;
-      z-index: 0;
-      text-align: right;
-      margin-right: 28px;
-      margin-top: 100px;
-      font-family: "Poppins", sans-serif;
-
-      &::after {
-        content: "";
-        background-color: $second-color;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: -7px;
-        right: -14px;
-        z-index: -1;
-      }
-    }
-  }
-
-  .about-right {
-    position: relative;
-
-    .about-img {
-      margin-top: -50px;
-      border: 15px solid white;
-    }
-
-    .about-desc {
-      flex: 0;
-      width: 550px;
-      height: 242px;
-      color: #555555;
-      font-family: Roboto;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 28px;
-      margin-top: 20px;
-    }
-  }
-}
 
 // ================== section projects ===========================
-.projects {
-  // background-color: #f5f8fd;
-  margin-top: 40px;
-
-  .img-portfolio {
-    width: 100%;
-  }
-
-  .project-item {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-
-    .project-img {
-      margin: 20px;
-      width: 100%;
-      flex: 1;
-    }
-
-    .project-desc {
-      // margin: 20px 10px 20px 80px;
-      flex: 1;
-
-      .technology {
-        display: flex;
-        justify-content: center;
-
-        .technology-item {
-          font-size: 18px;
-          font-family: "Poppins", sans-serif;
-          line-height: 28px;
-          padding: 4px 6px;
-          font-weight: 600;
-          margin: 0 5px;
-          // background-color: white;
-          color: $font-color;
-          margin-bottom: 20px;
-        }
-      }
-    }
-
-    .project-link {
-      display: flex;
-      justify-content: center;
-      font-family: "Poppins", sans-serif;
-      margin-top: 40px;
-
-      .button-link {
-        margin: 0 8px;
-        background-color: inherit;
-        border: none;
-        color: $font-color;
-        padding: 5px 23px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        position: relative;
-        z-index: 1;
-        margin-right: 40px;
-        background-color: $second-color;
-        min-width: 120px;
-        transition: 0.5s;
-
-        i {
-          margin-right: 5px;
-          color: $font-color;
-          font-size: 1rem;
-          padding: 5px 0;
-        }
-
-        &:hover {
-          cursor: pointer;
-          background-color: $btn-hover;
-        }
-
-        &:focus {
-          outline: none;
-        }
-
-        // &::after {
-        //   content: "";
-        //   background-color: #cfccff;
-        //   width: 30px;
-        //   height: 30px;
-        //   position: absolute;
-        //   top: -7px;
-        //   right: -14px;
-        //   z-index: -1;
-        // }
-      }
-    }
-  }
-}

@@ -1,293 +1,31 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
   body .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; }
-  body .fiveth-header {
-    color: #726bb1;
-    font-size: 36px;
-    font-weight: 800;
-    font-family: "Poppins", sans-serif;
-    padding-top: 20px;
-    text-align: center; }
-  body .sixth-header {
-    color: #222222;
-    font-size: 24px;
-    font-weight: 800; }
-  body .header {
-    width: 100vw;
+
+header {
+  background-image: url(../images/img-05.jpg);
+  height: 100vh; }
+  header ul {
+    margin: 0;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin: 0 auto;
-    position: relative;
-    font-family: "Roboto", sans-serif; }
-    body .header::before {
-      content: "";
-      background-color: #726bb1;
-      height: 40vh; }
-    body .header::after {
-      content: "";
-      background-color: #cfccff;
-      height: 60vh; }
-    body .header .jumbotron {
-      background-image: url("../images/evanaFoto.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 91vw;
-      height: 95vh;
-      position: absolute;
-      top: 5vh;
-      left: 4.5vw; }
-      body .header .jumbotron::after {
-        content: "";
-        position: absolute;
-        height: 75vh;
-        width: 45%;
-        border-top: 10vh solid rgba(114, 107, 177, 0.8);
-        border-right: 5vw solid rgba(114, 107, 177, 0.8);
-        border-bottom: 10vh solid rgba(114, 107, 177, 0.8);
-        top: 0;
-        right: 0; }
-      body .header .jumbotron::before {
-        content: "";
-        position: absolute;
-        width: 89%;
-        background-image: url("../images/memphis.png");
-        background-color: rgba(207, 204, 255, 0.5);
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: 10vh;
-        left: 5vw;
-        height: 75vh; }
-      body .header .jumbotron .header-inf {
-        border: 9px solid #fff;
-        max-width: 417px;
-        margin-top: 20vh;
-        margin-left: 10%;
-        padding: 20px 0 20px 55px;
-        min-height: 300px;
-        position: relative; }
-        body .header .jumbotron .header-inf::before {
-          content: "Front-End Developer";
-          position: absolute;
-          font-family: "Poppins", sans-serif;
-          color: #4d487a;
-          top: 80px;
-          width: 600px;
-          left: 55px;
-          font-size: 48px;
-          font-weight: 800; }
-        body .header .jumbotron .header-inf::after {
-          content: "FRONT";
-          position: absolute;
-          color: rgba(114, 107, 177, 0.2);
-          top: 150px;
-          width: 600px;
-          left: 100%;
-          font-size: 15em;
-          font-weight: 800; }
-        body .header .jumbotron .header-inf .header-text {
-          position: relative; }
-        body .header .jumbotron .header-inf .link {
-          margin-top: 55%;
-          display: block;
-          text-decoration: none;
-          color: #000;
-          font-weight: 600;
-          position: relative;
-          z-index: 0; }
-          body .header .jumbotron .header-inf .link::after {
-            content: "";
-            background-color: #fff;
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: -9px;
-            left: 45px;
-            z-index: -1; }
-        body .header .jumbotron .header-inf .introduce {
-          color: #fff;
-          text-transform: uppercase;
-          font-size: 20px;
-          font-weight: 600;
-          position: relative;
-          font-family: "Poppins", sans-serif; }
-          body .header .jumbotron .header-inf .introduce::after {
-            content: "Witam w moim portfolio. Zapraszam do zapoznania się z moimi projektami oraz repozytorium na github.";
-            position: absolute;
-            top: 120px;
-            left: 0;
-            font-size: 16px;
-            text-transform: none;
-            min-width: 500px;
-            color: #222222;
-            font-weight: 400;
-            line-height: 25px;
-            font-family: roboto; }
-        body .header .jumbotron .header-inf p {
-          color: #222222; }
-
-.about {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-  .about .about-left {
-    padding-top: 30px;
-    margin-left: 228px;
-    margin-right: 60px;
-    -ms-flex: 2;
-        flex: 2;
-    position: relative; }
-    .about .about-left::before {
-      position: absolute;
-      width: 600px;
-      content: "FRONT-END";
-      color: #726bb1;
-      font-size: 86px;
-      font-weight: 900;
-      font-family: Poppins;
-      text-shadow: 0 12px 28px rgba(6, 7, 7, 0.12);
-      transform: rotate(-90deg);
-      top: 220px;
-      right: 343px; }
-    .about .about-left::after {
-      position: absolute;
-      content: "F";
-      color: #f5f9fd;
-      top: -223px;
-      left: -390px;
-      font-size: 45em;
-      font-weight: 700;
-      font-family: "Poppins", sans-serif;
-      transform: scalex(-1);
-      z-index: -1; }
-    .about .about-left .first-header {
-      color: #222222;
-      font-family: "Poppins", sans-serif;
-      font-size: 50px;
-      width: 422px;
-      font-weight: 700;
-      line-height: 70px; }
-    .about .about-left .third-header {
-      width: 422px;
-      font-size: 18px;
-      font-family: "Roboto";
-      font-weight: 700;
-      line-height: 28px; }
-      .about .about-left .third-header span {
-        color: #726bb1; }
-    .about .about-left .more {
-      position: relative;
-      display: block;
-      text-decoration: none;
-      font-family: "Roboto";
-      color: #000;
-      font-weight: 600;
-      position: relative;
-      z-index: 0;
-      text-align: right;
-      margin-right: 28px;
-      margin-top: 100px;
-      font-family: "Poppins", sans-serif; }
-      .about .about-left .more::after {
-        content: "";
-        background-color: #cfccff;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: -7px;
-        right: -14px;
-        z-index: -1; }
-  .about .about-right {
-    position: relative; }
-    .about .about-right .about-img {
-      margin-top: -50px;
-      border: 15px solid white; }
-    .about .about-right .about-desc {
-      -ms-flex: 0;
-          flex: 0;
-      width: 550px;
-      height: 242px;
-      color: #555555;
-      font-family: Roboto;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 28px;
-      margin-top: 20px; }
-
-.projects {
-  margin-top: 40px; }
-  .projects .img-portfolio {
-    width: 100%; }
-  .projects .project-item {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    margin-bottom: 20px; }
-    .projects .project-item .project-img {
-      margin: 20px;
-      width: 100%;
-      -ms-flex: 1;
-          flex: 1; }
-    .projects .project-item .project-desc {
-      -ms-flex: 1;
-          flex: 1; }
-      .projects .project-item .project-desc .technology {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center; }
-        .projects .project-item .project-desc .technology .technology-item {
-          font-size: 18px;
-          font-family: "Poppins", sans-serif;
-          line-height: 28px;
-          padding: 4px 6px;
-          font-weight: 600;
-          margin: 0 5px;
-          color: #222222;
-          margin-bottom: 20px; }
-    .projects .project-item .project-link {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      font-family: "Poppins", sans-serif;
-      margin-top: 40px; }
-      .projects .project-item .project-link .button-link {
-        margin: 0 8px;
-        background-color: inherit;
-        border: none;
-        color: #222222;
-        padding: 5px 23px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        position: relative;
-        z-index: 1;
-        margin-right: 40px;
-        background-color: #cfccff;
-        min-width: 120px;
-        transition: 0.5s; }
-        .projects .project-item .project-link .button-link i {
-          margin-right: 5px;
-          color: #222222;
-          font-size: 1rem;
-          padding: 5px 0; }
-        .projects .project-item .project-link .button-link:hover {
-          cursor: pointer;
-          background-color: #bbb8fa; }
-        .projects .project-item .project-link .button-link:focus {
-          outline: none; }
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-top: 20px; }
+    header ul li {
+      margin: 0;
+      list-style-type: none; }
+      header ul li a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px; }

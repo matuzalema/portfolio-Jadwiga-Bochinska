@@ -13,11 +13,11 @@
     <header class="header">
       <nav>
         <ul>
-          <li><a href="home">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="more" class="sign">V</a></li>
-          <li><a href="projects">Pojects</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#more" class="sign">V</a></li>
+          <li><a href="#projects">Pojects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <h1 class="first-header">Szukasz Front-End Developera?</h1>
@@ -33,7 +33,7 @@
     <!-- ============================ about=========================================== -->
     <section class="about" id="about">
       <div class="container">
-        <i class="far fa-user"></i>
+        <i class="far fa-user header-icon"></i>
         <h1 class="second-header">O mnie</h1>
         <div class="about-sections">
           <p class="about-desc">
@@ -47,7 +47,7 @@
             aliquam pariatur itaque ex totam, minus placeat velit maiores
             voluptate dolorem, facilis inventore consequatur id aliquid et.
           </p>
-          <img class="img-tel" src="images/tel.jpg" alt="" />
+          <img class="img-tel" src="images/tel1.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -55,7 +55,7 @@
     <!-- ============================ skills =========================================== -->
 
     <section class="skills light">
-      <i class="fas fa-tv"></i>
+      <i class="fas fa-graduation-cap header-icon"></i>
       <h1 class="second-header dark">Umiejętności</h1>
       <div class="soft-skills">
         <div class="skills-item">
@@ -100,18 +100,106 @@
         </div>
       </div>
       <div class="skills-icons">
-        <h2 class="fab fab-text react">CSS</h2>
-        <h2 class="fab fab-text react">HTML5</h2>
-        <h2 class="fab fab-text react">Sass</h2>
-        <h2 class="fab fab-text react">Git</h2>
-        <h2 class="fab fab-text react">React</h2>
-        <h2 class="fab fab-text react">React</h2>
-        <h2 class="fab fab-text jQuery">jQuery</h2>
-        <h2 class="fab fab-text Bootstrap">Bootstrap</h2>
-        <!-- <h2 class="fab fab-text PSD">PSD to HTML <br>pixel perfect</h2> -->
-        <h2 class="fab fab-text RWD">RWD</h2>
-        <h2 class="fab fab-text Jira">Jira</h2>
+        <h2 class="hexagon react">CSS</h2>
+        <h2 class="hexagon react">HTML5</h2>
+        <h2 class="hexagon react">Sass</h2>
+        <h2 class="hexagon react">Git</h2>
+        <h2 class="hexagon react">React</h2>
+        <h2 class="hexagon jQuery">jQuery</h2>
+        <h2 class="hexagon Bootstrap">Bootstrap</h2>
+        <h2 class="hexagon RWD">RWD</h2>
+        <h2 class="hexagon Jira">Jira</h2>
       </div>
+    </section>
+
+    <!-- ============================ projects =========================================== -->
+    <section class="projects" id="projects">
+      <!-- <div class="container"> -->
+        <i class="fas fa-tv header-icon main-color"></i>
+        <h1 class="second-header">Projekty</h1>
+
+        <div class="project-item">
+          <img class="project-img" src="images/mockup-photo-inventions.png" alt="">
+          <div class="project-desc">
+            <div class="project-text">
+              <h2 class="project-header">Sklep Internetowy</h2>
+              <h3 class="project-technology"> React , React Router, Redux, ES6, Sass</h3>
+              <p class="project-paragraph">Sklep zawiera:</p>
+              <ul class="checkmark">
+                <li>Sortowanie produktów</li>
+                <li>Dodawanie produktów do koszyka</li>
+                <li>Możliwość zmiany liczby sztuk w koszyku</li>
+                <li>Możliwość usuwania produktów z koszyka</li>
+                <li>Funkcjonalność kodu rabatowego</li>
+                <li>Podsumowanie zamównienia</li>
+                <li>Pormularze: logowania, rejestracji, feedback</li>
+                <li>Animacje</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/matuzalema/shop-my-project-react" target=" _blank">Github</a>
+              <a class="project-link" href="https://photo-inventions.firebaseapp.com/" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-desc">
+            <div class="project-text">
+              <h2 class="project-header">Panel administracyjny</h2>
+              <h3 class="project-technology"> JavaScript, HTML, CSS, Sass, Git, RWD, Chart.js</h3>
+              <p>Projekt zawiera:</p>
+              <p>Modale</p>
+              <p>Podstrony</p>
+              <p>Responsywne tabele</p>
+              <p>Responsywny, interaktywny wykres</p>
+              <p>Zróżnicowane formularze</p>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/matuzalema/admin-panel-my-project" target=" _blank">Github</a>
+              <a class="project-link" href="https://matuzalema.github.io/admin-panel-my-project/" target="_blank">Live</a>
+            </div>
+          </div>
+          <img class="project-img" src="images/mockup-panel-admin.png" alt="">
+        </div>
+
+        <div class="project-item">
+          <img class="project-img" src="images/mockup-awax.jpg" alt="">
+          <div class="project-desc">
+            <div class="project-text">
+              <h2 class="project-header">Awax - strona dla firmy</h2>
+              <h3 class="project-technology"> HTML, CSS, Sass, Git, Avocode</h3>
+              <p class="project-paragraph"></p>
+              <ul class="checkmark">
+                <li>PSD to HTML pixel perfect</li>
+                <li>Avocode - wykrzystanie profesjonalnego narzędzia dla Web Developerów do tworzenia stron na bazie grafiki</li>
+                <li>11 sekcji</li>
+                <li>responsywność</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/matuzalema/shop-my-project-react" target=" _blank">Github</a>
+              <a class="project-link" href="https://photo-inventions.firebaseapp.com/" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-desc">
+            <div class="project-text">
+              <h2 class="project-header">Biuro podróży</h2>
+              <h3 class="project-technology"> ............</h3>
+              <p>Projekt składa się ze slajdów przedstawiających ciekawe miejsca na świecie. Każdy slajd automatycznie centruje mapę świata pokazując odpowiednie miejsce. Jest to element strony, któy z powodzeniem może zostać użyty na stronach biura podróży</p>
+              
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/matuzalema/admin-panel-my-project" target=" _blank">Github</a>
+              <a class="project-link" href="https://matuzalema.github.io/admin-panel-my-project/" target="_blank">Live</a>
+            </div>
+          </div>
+          <img class="project-img" src="images/mockup-panel-admin.png" alt="">
+        </div>
+      <!-- </div> -->
     </section>
   </body>
 </html>

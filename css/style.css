@@ -53,6 +53,21 @@ p {
 .light {
   color: #fff; }
 
+.fas {
+  color: #28a5df;
+  font-size: 40px;
+  text-align: center;
+  display: block; }
+
+.header-icon {
+  font-size: 40px;
+  text-align: center;
+  display: block;
+  color: #28a5df; }
+
+.main-color {
+  color: #28a5df; }
+
 header {
   background-image: url(../images/img-05.jpg);
   height: 100vh; }
@@ -98,7 +113,8 @@ header {
     margin: 30px auto 0; }
   header .img-laptop {
     position: relative;
-    top: -50px;
+    top: 50px;
+    left: 50px;
     width: 600px; }
   header .fa-angle-double-down {
     color: #fff;
@@ -111,11 +127,6 @@ header {
 
 .about {
   padding-top: 60px; }
-  .about .fa-user {
-    color: #28a5df;
-    font-size: 40px;
-    text-align: center;
-    display: block; }
   .about .about-sections {
     display: -ms-flexbox;
     display: flex;
@@ -128,17 +139,14 @@ header {
         color: #28a5df; }
     .about .about-sections .img-tel {
       width: 300px;
-      height: 500px; }
+      height: auto;
+      margin-left: 50px; }
 
 .skills {
   padding-top: 50px;
   margin-top: 50px;
-  background-color: #0404040d; }
-  .skills .fas {
-    color: #28a5df;
-    font-size: 40px;
-    text-align: center;
-    display: block; }
+  background-color: #0404040d;
+  padding-bottom: 60px; }
   .second-header .skills:after {
     border-bottom: 3px dotted #28a5df; }
   .skills .skills-icons {
@@ -150,24 +158,13 @@ header {
     padding-top: 30px; }
     .skills .skills-icons .fab {
       font-size: 40px;
-      color: #fff;
+      color: #454545;
       display: block;
-      background: black;
       border-radius: 50%;
       height: 300px;
       width: 300px;
       margin: 0;
-      background: radial-gradient(circle at 100px 100px, #2eb4f2, #0c2e3d); }
-    .skills .skills-icons .fab-text {
-      font-size: 18px;
-      width: 100px;
-      background-color: #fff;
-      text-align: center;
-      height: 100px;
-      line-height: 100px;
-      border-radius: 50%;
-      font-weight: 400;
-      font-family: "Poppins", sans-serif; }
+      border: 3px solid #28a5df; }
   .skills .soft-skills {
     display: -ms-flexbox;
     display: flex;
@@ -190,7 +187,7 @@ header {
       .skills .soft-skills .skills-item .skills-desc {
         padding-left: 30px; }
   .skills .skills-icons {
-    max-width: 85%;
+    max-width: 35%;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
@@ -200,3 +197,101 @@ header {
         flex-wrap: wrap; }
     .skills .skills-icons .fab {
       margin: 20px 40px; }
+  .skills .hexagon {
+    width: 100px;
+    height: 55px;
+    background: #e1e2e2;
+    position: relative;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 14px 2px;
+    color: #454545; }
+    .skills .hexagon:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid #e1e2e2; }
+    .skills .hexagon:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid #e1e2e2; }
+
+.projects {
+  padding-top: 50px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .projects .project-item {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px; }
+    .projects .project-item:nth-child(even) {
+      text-align: right; }
+    .projects .project-item .project-paragraph {
+      font-weight: 400; }
+    .projects .project-item .project-img {
+      width: 50%;
+      height: auto;
+      -o-object-fit: contain;
+         object-fit: contain;
+      padding: 0 50px; }
+    .projects .project-item .project-desc {
+      padding: 0 50px;
+      width: 50%; }
+      .projects .project-item .project-desc .checkmark {
+        padding: 0; }
+        .projects .project-item .project-desc .checkmark li {
+          list-style: none;
+          padding: 0 0 0 20px;
+          position: relative;
+          line-height: 36px;
+          margin: 0; }
+          .projects .project-item .project-desc .checkmark li:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 2px;
+            width: 4px;
+            height: 10px;
+            border: solid #28a5df;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg); }
+    .projects .project-item .project-header {
+      color: #28a5df;
+      font-size: 34px;
+      font-weight: 400;
+      margin: 30px 0 10px 0; }
+    .projects .project-item .project-technology {
+      margin-bottom: 30px; }
+    .projects .project-item .project-links {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .projects .project-item .project-links .project-link {
+        text-decoration: none;
+        background-color: #28a5df;
+        margin: 40px 15px;
+        padding: 5px 10px;
+        width: 100px;
+        text-align: center;
+        color: #fff;
+        border-radius: 20px;
+        transition: 0.3s; }
+        .projects .project-item .project-links .project-link:first-child {
+          background-color: #454545; }
+        .projects .project-item .project-links .project-link:hover {
+          background-color: #2594c7; }

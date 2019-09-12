@@ -28,7 +28,7 @@ p {
 
 .second-header {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
   padding-top: 20px;
   position: relative;
@@ -139,12 +139,14 @@ header {
         color: #28a5df; }
     .about .about-sections .img-tel {
       width: 300px;
-      height: auto;
-      margin-left: 50px; }
+      height: 535px;
+      margin-left: 50px;
+      position: relative;
+      top: -150px; }
 
 .skills {
   padding-top: 50px;
-  margin-top: 50px;
+  margin-top: -100px;
   background-color: #0404040d;
   padding-bottom: 60px; }
   .second-header .skills:after {
@@ -237,7 +239,7 @@ header {
   .projects .project-item {
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
     .projects .project-item:nth-child(even) {
       text-align: right; }
     .projects .project-item .project-paragraph {
@@ -271,8 +273,8 @@ header {
             transform: rotate(45deg); }
     .projects .project-item .project-header {
       color: #28a5df;
-      font-size: 34px;
-      font-weight: 400;
+      font-size: 30px;
+      font-weight: 600;
       margin: 30px 0 10px 0; }
     .projects .project-item .project-technology {
       margin-bottom: 30px; }
@@ -289,7 +291,7 @@ header {
         width: 100px;
         text-align: center;
         color: #fff;
-        border-radius: 20px;
+        border-radius: 5px;
         transition: 0.3s; }
         .projects .project-item .project-links .project-link:first-child {
           background-color: #454545; }

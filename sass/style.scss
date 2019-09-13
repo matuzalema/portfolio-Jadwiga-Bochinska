@@ -193,7 +193,7 @@ header {
     top: 230px;
   }
   100% {
-   top: 260px;
+    top: 260px;
   }
 }
 // ================== section about ===========================
@@ -524,5 +524,18 @@ header {
 
   .button {
     margin-top: 15px;
+  }
+}
+
+// ================== section footer ===========================
+
+footer {
+  background-color: $third-color;
+
+  .footer-desc {
+    text-align: center;
+    line-height: 50px;
+    color: $second-color;
+    font-size: 12px;
   }
 }

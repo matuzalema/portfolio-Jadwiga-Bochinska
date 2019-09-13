@@ -407,3 +407,11 @@ header {
         color: #4242429e; }
   .contact .button {
     margin-top: 15px; }
+
+footer {
+  background-color: #454545; }
+  footer .footer-desc {
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 12px; }

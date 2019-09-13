@@ -68,7 +68,8 @@ p {
 .main-color {
   color: #28a5df; }
 
-.button, .link {
+.button,
+.link {
   background-color: #28a5df;
   padding: 5px 10px;
   width: 100px;
@@ -82,7 +83,8 @@ p {
   font-size: 18px;
   font-family: "Poppins";
   text-decoration: none; }
-  .button:hover, .link:hover {
+  .button:hover,
+  .link:hover {
     background-color: #2594c7;
     cursor: pointer; }
 
@@ -141,7 +143,17 @@ header {
     display: block;
     text-align: center;
     font-size: 25px;
+    top: 230px;
+    animation-name: arrow;
+    animation: arrow 6s infinite; }
+
+@keyframes arrow {
+  0% {
+    top: 260px; }
+  50% {
     top: 230px; }
+  100% {
+    top: 260px; } }
 
 .about {
   padding-top: 60px; }
@@ -269,8 +281,8 @@ header {
       .projects .project-item .img-wrapper img {
         width: 100%;
         height: 100%;
-        -o-object-fit: cover;
-           object-fit: cover; }
+        -o-object-fit: contain;
+           object-fit: contain; }
     .projects .project-item .project-desc {
       padding: 0 50px;
       width: 50%; }
@@ -333,12 +345,13 @@ header {
     -ms-flex-pack: center;
         justify-content: center; }
     .contact .contact-media i {
-      color: #28a5df;
-      margin: 10px  30px 50px 30px;
+      color: #454545;
+      margin: 10px 30px 50px 30px;
       transition: 0.5s;
-      font-size: 42px; }
+      font-size: 42px;
+      background-color: white; }
       .contact .contact-media i:hover {
-        color: #454545; }
+        color: #272727; }
   .contact .data-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -367,14 +380,16 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
       width: 100%; }
-      .contact .contact-form .form-item input, .contact .contact-form .form-item textarea {
+      .contact .contact-form .form-item input,
+      .contact .contact-form .form-item textarea {
         border: none;
         background-color: white;
         margin-bottom: 25px;
         width: 100%;
         border-radius: 5px;
         box-shadow: 1px 1px 10px #dcdcdc; }
-        .contact .contact-form .form-item input:focus, .contact .contact-form .form-item textarea:focus {
+        .contact .contact-form .form-item input:focus,
+        .contact .contact-form .form-item textarea:focus {
           outline: none; }
       .contact .contact-form .form-item textarea {
         padding: 20px; }

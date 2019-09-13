@@ -172,7 +172,7 @@
             </h3>
             <p>Projekt zawiera:</p>
             <p>Modale</p>
-            <p>Podstrony</p>
+            <p>Siedem podstron</p>
             <p>Responsywne tabele</p>
             <p>Responsywny, interaktywny wykres</p>
             <p>Zróżnicowane formularze</p>
@@ -284,39 +284,50 @@
       <i class="fas fa-tv header-icon main-color"></i>
       <h1 class="second-header">Kontakt</h1>
       <div class="data-wrapper">
-        <h2 class="third-header"> Tel. 500 275 335</h2>
-        <h2 class="third-header"> Miasto: Warszawa</h2>
-        <h2 class="third-header"> Email: jadwiga.bochinska@gmail.com</h2>
+        <h2 class="third-header">Tel. 500 275 335</h2>
+        <h2 class="third-header">Miasto: Warszawa</h2>
+        <h2 class="third-header">Email: jadwiga.bochinska@gmail.com</h2>
       </div>
       <div class="contact-media">
-        <a href="https://github.com/matuzalema" target="_blank"> 
+        <a href="https://github.com/matuzalema" target="_blank">
           <i class="fab fa-github-square"></i>
         </a>
-        <a href="https://www.linkedin.com/in/jadwiga-bochi%C5%84ska-24ab25182/" target="_blank">     <i class="fab fa-linkedin"></i>
+        <a
+          href="https://www.linkedin.com/in/jadwiga-bochi%C5%84ska-24ab25182/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
         </a>
       </div>
 
-      <form class="contact-form" action="script.php" method="post" onsubmit="clearDelete()" >
+      <form
+        class="contact-form"
+        action="script.php"
+        method="post"
+        onsubmit="clearDelete()"
+      >
         <div class="wrapper">
           <div class="form-item">
             <label for="name">Imię</label>
-            <input type="text" name="name" required>
+            <input type="text" name="name" id="name" required />
           </div>
-          <div class="form-item">        
+          <div class="form-item">
             <label for="email">Email</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" id="email" required />
           </div>
         </div>
         <div class="form-item">
           <label for="subject">Imię i nazwisko</label>
-          <input type="text" name="subject" required>
+          <input type="text" name="subject" id="subject" required />
         </div>
-        <div class="form-item">        
-          <label for="message"">Wiadomość</label>
-          <textarea name="message" type="text" rows="8" col="50" required></textarea>
+        <div class="form-item">
+          <label for="message">Wiadomość</label>
+          <textarea name="message" id="message" rows="8" required></textarea>
         </div>
         <button type="submit" class="button">Wyślij</button>
       </form>
     </section>
   </body>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="js/script.js"></script>
 </html>

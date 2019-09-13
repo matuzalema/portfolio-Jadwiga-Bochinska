@@ -119,11 +119,13 @@
       <h1 class="second-header">Projekty</h1>
 
       <div class="project-item">
-        <img
-          class="project-img"
-          src="images/mockup-photo-inventions.jpg"
-          alt=""
-        />
+        <div class="img-wrapper">
+          <img
+            class="project-img"
+            src="images/mockup-photo-inventions.jpg"
+            alt=""
+          />
+        </div>
         <div class="project-desc">
           <div class="project-text">
             <h2 class="project-header">Sklep Internetowy</h2>
@@ -138,7 +140,7 @@
               <li>Możliwość usuwania produktów z koszyka</li>
               <li>Funkcjonalność kodu rabatowego</li>
               <li>Podsumowanie zamównienia</li>
-              <li>Pormularze: logowania, rejestracji, feedback</li>
+              <li>Formularze: logowania, rejestracji, feedback</li>
               <li>Animacje</li>
             </ul>
           </div>
@@ -175,7 +177,7 @@
             <p>Responsywny, interaktywny wykres</p>
             <p>Zróżnicowane formularze</p>
           </div>
-          <div class="project-links">
+          <div class="project-links right">
             <a
               class="project-link"
               href="https://github.com/matuzalema/admin-panel-my-project"
@@ -190,11 +192,17 @@
             >
           </div>
         </div>
-        <img class="project-img" src="images/mockup-panel-admin.png" alt="" />
+        <div class="img-wrapper">
+          <img class="project-img" src="images/mockup-panel-admin.png" alt="" />
+        </div>
       </div>
 
+      <!-- project item -->
+
       <div class="project-item">
-        <img class="project-img" src="images/mockup-awax.jpg" alt="" />
+        <div class="img-wrapper">
+          <img class="project-img" src="images/mockup-awax.jpg" alt="" />
+        </div>
         <div class="project-desc">
           <div class="project-text">
             <h2 class="project-header">Awax - strona dla firmy</h2>
@@ -227,6 +235,8 @@
         </div>
       </div>
 
+      <!-- project item -->
+
       <div class="project-item">
         <div class="project-desc">
           <div class="project-text">
@@ -247,7 +257,7 @@
             <p>Zmiana slajdu po kliknięciu w marker</p>
             <p>Wycentrowanie mapy po zmianie aktywnego slajdu</p>
           </div>
-          <div class="project-links">
+          <div class="project-links right">
             <a
               class="project-link"
               href="https://github.com/matuzalema/places-to-visit"
@@ -262,14 +272,51 @@
             >
           </div>
         </div>
-        <img class="project-img" src="images/mockup-travel.png" alt="" />
+        <div class="img-wrapper">
+          <img class="project-img" src="images/mockup-travel.png" alt="" />
+        </div>
       </div>
     </section>
 
     <!-- ============================ contact =========================================== -->
 
     <section id="contact" class="contact">
-      <form></form>
+      <i class="fas fa-tv header-icon main-color"></i>
+      <h1 class="second-header">Kontakt</h1>
+      <div class="data-wrapper">
+        <h2 class="third-header"> Tel. 500 275 335</h2>
+        <h2 class="third-header"> Miasto: Warszawa</h2>
+        <h2 class="third-header"> Email: jadwiga.bochinska@gmail.com</h2>
+      </div>
+      <div class="contact-media">
+        <a href="https://github.com/matuzalema" target="_blank"> 
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jadwiga-bochi%C5%84ska-24ab25182/" target="_blank">     <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <form class="contact-form" action="script.php" method="post" onsubmit="clearDelete()" >
+        <div class="wrapper">
+          <div class="form-item">
+            <label for="name">Imię</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-item">        
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="subject">Imię i nazwisko</label>
+          <input type="text" name="subject" required>
+        </div>
+        <div class="form-item">        
+          <label for="message"">Wiadomość</label>
+          <textarea name="message" type="text" rows="8" col="50" required></textarea>
+        </div>
+        <button type="submit" class="button">Wyślij</button>
+      </form>
     </section>
   </body>
 </html>

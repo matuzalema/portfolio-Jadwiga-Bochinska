@@ -68,6 +68,24 @@ p {
 .main-color {
   color: #28a5df; }
 
+.button, .link {
+  background-color: #28a5df;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  font-family: "Poppins";
+  text-decoration: none; }
+  .button:hover, .link:hover {
+    background-color: #2594c7;
+    cursor: pointer; }
+
 header {
   background-image: url(../images/img-05.jpg);
   height: 100vh; }
@@ -244,12 +262,15 @@ header {
       text-align: right; }
     .projects .project-item .project-paragraph {
       font-weight: 400; }
-    .projects .project-item .project-img {
-      width: 50%;
-      height: auto;
-      -o-object-fit: contain;
-         object-fit: contain;
+    .projects .project-item .img-wrapper {
+      -ms-flex: 1;
+          flex: 1;
       padding: 0 50px; }
+      .projects .project-item .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
     .projects .project-item .project-desc {
       padding: 0 50px;
       width: 50%; }
@@ -257,14 +278,14 @@ header {
         padding: 0; }
         .projects .project-item .project-desc .checkmark li {
           list-style: none;
-          padding: 0 0 0 20px;
+          padding: 0 0 0 25px;
           position: relative;
           line-height: 36px;
           margin: 0; }
           .projects .project-item .project-desc .checkmark li:after {
             content: "";
             position: absolute;
-            top: 5px;
+            top: 10px;
             left: 2px;
             width: 4px;
             height: 10px;
@@ -272,20 +293,21 @@ header {
             border-width: 0 2px 2px 0;
             transform: rotate(45deg); }
     .projects .project-item .project-header {
-      color: #28a5df;
+      color: #454545;
       font-size: 30px;
       font-weight: 600;
       margin: 30px 0 10px 0; }
     .projects .project-item .project-technology {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #28a5df; }
     .projects .project-item .project-links {
       display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      display: flex; }
       .projects .project-item .project-links .project-link {
         text-decoration: none;
-        background-color: #28a5df;
+        background-color: #454545;
         margin: 40px 15px;
         padding: 5px 10px;
         width: 100px;
@@ -293,7 +315,80 @@ header {
         color: #fff;
         border-radius: 5px;
         transition: 0.3s; }
-        .projects .project-item .project-links .project-link:first-child {
-          background-color: #454545; }
         .projects .project-item .project-links .project-link:hover {
-          background-color: #2594c7; }
+          background-color: #2e2e2e; }
+    .projects .project-item .right {
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.contact {
+  background-color: #0404040d;
+  padding-bottom: 50px;
+  padding: 50px 0; }
+  .contact .contact-media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .contact .contact-media i {
+      color: #28a5df;
+      margin: 10px  30px 50px 30px;
+      transition: 0.5s;
+      font-size: 42px; }
+      .contact .contact-media i:hover {
+        color: #454545; }
+  .contact .data-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-bottom: 20px; }
+  .contact .contact-form {
+    width: 50%;
+    margin: 0 auto; }
+    .contact .contact-form .wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .contact .contact-form .wrapper .form-item:first-child {
+        margin-right: 15px; }
+      .contact .contact-form .wrapper .form-item:last-child {
+        margin-left: 15px; }
+    .contact .contact-form .form-item {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 100%; }
+      .contact .contact-form .form-item input, .contact .contact-form .form-item textarea {
+        border: none;
+        background-color: white;
+        margin-bottom: 25px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px #dcdcdc; }
+        .contact .contact-form .form-item input:focus, .contact .contact-form .form-item textarea:focus {
+          outline: none; }
+      .contact .contact-form .form-item textarea {
+        padding: 20px; }
+      .contact .contact-form .form-item input {
+        line-height: 36px;
+        height: 36px;
+        padding: 0 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: #454545; }
+      .contact .contact-form .form-item label {
+        padding-bottom: 8px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #4242429e; }
+  .contact .button {
+    margin-top: 15px; }

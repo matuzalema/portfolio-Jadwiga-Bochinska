@@ -84,6 +84,27 @@ p {
 .main-color {
   color: $main-color;
 }
+
+.button, .link {
+  background-color: #28a5df;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  font-family: "Poppins";
+  text-decoration: none;
+
+  &:hover {
+    background-color: $btn-hover;
+    cursor: pointer;
+  }
+}
 // ================== section header ===========================
 header {
   background-image: url(../images/img-05.jpg);
@@ -314,14 +335,17 @@ header {
 
     .project-paragraph {
       font-weight: 400;
-      // line-height: 34px;
     }
 
-    .project-img {
-      width: 50%;
-      height: auto;
-      object-fit: contain;
+    .img-wrapper {
+      flex: 1 ;
       padding: 0 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .project-desc {
@@ -333,7 +357,7 @@ header {
 
         li {
           list-style: none;
-          padding: 0 0 0 20px;
+          padding: 0 0 0 25px;
           position: relative;
           line-height: 36px;
           margin: 0;
@@ -341,7 +365,7 @@ header {
           &:after {
             content: "";
             position: absolute;
-            top: 5px;
+            top: 10px;
             left: 2px;
             width: 4px;
             height: 10px;
@@ -354,27 +378,25 @@ header {
     }
 
     .project-header {
-      color: $main-color;
+      color: $third-color;
       font-size: 30px;
       font-weight: 600;
-      // text-align: center;
       margin: 30px 0 10px 0;
     }
 
     .project-technology {
-      // text-align: center;
       margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $main-color;
     }
 
     .project-links {
       display: flex;
-      justify-content: center;
-
-      // justify-content: center;
 
       .project-link {
         text-decoration: none;
-        background-color: $main-color;
+        background-color: $third-color;
         margin: 40px 15px;
         padding: 5px 10px;
         width: 100px;
@@ -383,14 +405,108 @@ header {
         border-radius: 5px;
         transition: 0.3s;
 
-        &:first-child {
-          background-color: $third-color;
+        &:hover {
+          background-color: #2e2e2e;
         }
 
-        &:hover {
-          background-color: #2594c7;
-        }
       }
     }
+
+    .right {
+      justify-content: flex-end;
+    }
+  }
+}
+
+// ================== section contact ===========================
+.contact {
+  background-color: $bg-light;
+  padding-bottom: 50px;
+  padding: 50px 0;
+
+  .contact-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    i {
+      color: $main-color;
+      margin: 10px  30px 50px 30px;
+      transition: 0.5s;
+      font-size: 42px;
+
+      &:hover {
+        color: $third-color;
+      }     
+    }
+  }
+
+  .data-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 50%;
+    margin: 0 auto;
+   
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .form-item:first-child {
+          margin-right: 15px;
+        }
+
+        .form-item:last-child {
+          margin-left: 15px;
+        }
+      }
+    
+    .form-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+    input, textarea {
+      border: none;
+      background-color: white;
+      margin-bottom: 25px;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 1px 1px 10px #dcdcdc;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      padding: 20px;
+    }
+    
+    input {
+      line-height: 36px;
+      height: 36px;
+      padding: 0 20px;
+      padding: 0 20px;
+      font-size: 18px;
+      color: rgb(69, 69, 69); 
+    }
+
+    label {
+        padding-bottom: 8px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #4242429e;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 15px;
   }
 }

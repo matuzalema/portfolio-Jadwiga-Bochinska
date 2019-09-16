@@ -49,7 +49,22 @@ sr.reveal(".fa-angle-double-down", {
 });
 
 sr.reveal(".hexagon", {
-  delay: 1500,
+  delay: 1000,
   mobile: true,
   duration: 2000
+});
+
+/*--------------scroll site---------------------*/
+
+$(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+    var hash = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      1500
+    );
+    return false;
+  });
 });

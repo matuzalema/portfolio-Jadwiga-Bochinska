@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #454545; }
   body .container {
     width: 100%;
@@ -55,7 +55,7 @@ p {
 
 .fas {
   color: #28a5df;
-  font-size: 40px;
+  font-size: 28px;
   text-align: center;
   display: block; }
 
@@ -133,11 +133,6 @@ header {
     letter-spacing: 0.5px;
     max-width: 70%;
     margin: 30px auto 0; }
-  header .img-laptop {
-    position: relative;
-    top: 30px;
-    left: 50px;
-    width: 560px; }
   header .fa-angle-double-down {
     color: #fff;
     margin: 0 auto;
@@ -174,7 +169,7 @@ header {
       height: 535px;
       margin-left: 50px;
       position: relative;
-      top: -150px; }
+      top: -100px; }
 
 .skills {
   padding-top: 50px;
@@ -192,7 +187,6 @@ header {
     padding-top: 30px; }
     .skills .skills-icons .fab {
       font-size: 40px;
-      color: #454545;
       display: block;
       border-radius: 50%;
       height: 300px;
@@ -211,7 +205,8 @@ header {
     .skills .soft-skills .skills-item {
       padding: 20px;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      width: 25%; }
       .skills .soft-skills .skills-item .third-header {
         margin-bottom: 15px; }
       .skills .soft-skills .skills-item .far {
@@ -219,7 +214,7 @@ header {
         padding-top: 10px;
         color: #28a5df; }
       .skills .soft-skills .skills-item .skills-desc {
-        padding-left: 30px; }
+        padding-left: 20px; }
   .skills .skills-icons {
     max-width: 35%;
     margin: 0 auto;
@@ -238,10 +233,13 @@ header {
     position: relative;
     text-align: center;
     line-height: 55px;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 14px 2px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 18px 6px;
     color: #454545; }
+    .skills .hexagon:hover {
+      transform: scale(1.2);
+      color: #28a5df; }
     .skills .hexagon:before {
       content: "";
       position: absolute;
@@ -279,15 +277,38 @@ header {
     .projects .project-item .img-wrapper {
       -ms-flex: 1;
           flex: 1;
-      padding: 0 50px; }
+      padding: 0 50px;
+      position: relative; }
+      .projects .project-item .img-wrapper:hover .img-text {
+        display: block;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        cursor: pointer; }
       .projects .project-item .img-wrapper img {
         width: 100%;
         height: 100%;
-        -o-object-fit: cover;
-           object-fit: cover; }
-      .projects .project-item .img-wrapper .shop-img {
-        position: relative;
-        bottom: 100px; }
+        -o-object-fit: contain;
+           object-fit: contain; }
+      .projects .project-item .img-wrapper .img-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00000075;
+        width: 100%;
+        height: 100%;
+        display: none; }
+        .projects .project-item .img-wrapper .img-text h2 {
+          color: white;
+          margin-bottom: 10px; }
+        .projects .project-item .img-wrapper .img-text .fas-project-img {
+          color: white;
+          font-size: 60px; }
     .projects .project-item .project-desc {
       padding: 0 50px;
       width: 50%; }

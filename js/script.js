@@ -24,12 +24,6 @@ sr.reveal(".project-links", {
   duration: 2000
 });
 
-sr.reveal(".about-desc", {
-  delay: 1000,
-  mobile: true,
-  duration: 2000
-});
-
 sr.reveal("input", {
   delay: 1000,
   mobile: true,

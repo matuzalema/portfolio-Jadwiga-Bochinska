@@ -98,6 +98,12 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative; }
+  header .fa-bars {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none; }
   header .main-header {
     width: 60%;
     background-color: rgba(255, 255, 255, 0.2);
@@ -218,20 +224,20 @@ header {
     padding-top: 20px; }
     .about .about-sections .about-desc {
       padding: 0 60px;
-      width: 70%;
+      width: 65%;
       text-align: right; }
       .about .about-sections .about-desc span {
         color: #28a5df; }
-    .about .about-sections .my-img {
-      width: 200px;
-      position: absolute;
-      top: -66px;
-      left: -5px; }
     .about .about-sections .img-about {
       width: 30%;
       position: relative;
       -ms-flex: 1;
           flex: 1; }
+      .about .about-sections .img-about .my-img {
+        width: 200px;
+        position: absolute;
+        top: -66px;
+        left: -5px; }
       .about .about-sections .img-about .triangle-about-dark {
         width: 0;
         height: 0;
@@ -241,7 +247,7 @@ header {
         border-right: 70px solid transparent;
         position: absolute;
         top: -450px;
-        right: 10px;
+        right: 20%;
         transform: rotate(25deg);
         opacity: 1; }
         .about .about-sections .img-about .triangle-about-dark:before {
@@ -278,8 +284,8 @@ header {
         border-top: 40px solid transparent;
         border-right: 40px solid transparent;
         position: absolute;
-        top: -150px;
-        right: 50px;
+        top: -80px;
+        right: 100px;
         transform: rotate(25deg);
         opacity: 0.7; }
         .about .about-sections .img-about .triangle-about-light:before {
@@ -308,12 +314,6 @@ header {
           left: 7px;
           transform: rotate(280deg);
           opacity: 0.5; }
-    .about .about-sections .img-tel {
-      width: 300px;
-      height: 535px;
-      margin-left: 50px;
-      position: relative;
-      top: -100px; }
 
 .skills {
   padding-top: 50px;
@@ -585,3 +585,195 @@ footer {
     line-height: 50px;
     color: #fff;
     font-size: 12px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about .about-sections .img-about .triangle-about-dark {
+    right: 120px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header .triangle {
+    left: 50px; }
+    header .triangle:after {
+      border-left: 40px solid transparent;
+      border-bottom: 40px solid #d6ce15;
+      border-top: 40px solid transparent;
+      border-right: 40px solid transparent; }
+  header .main-header {
+    font-size: 2rem; }
+  header .desc-wrapper {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 10%;
+    bottom: 40px;
+    padding: 90px 5% 50px 10px; }
+  .about .about-sections .img-about .triangle-about-dark {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-bottom: 70px solid #d6ce15;
+    border-top: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: absolute;
+    top: -450px;
+    right: 30px;
+    transform: rotate(25deg);
+    opacity: 1; }
+    .about .about-sections .img-about .triangle-about-dark:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-bottom: 100px solid #d6ce15;
+      border-top: 0 solid transparent;
+      border-right: 35px solid transparent;
+      position: absolute;
+      top: 10px;
+      left: 90px;
+      transform: rotate(180deg);
+      opacity: 0.9; }
+    .about .about-sections .img-about .triangle-about-dark:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 90px solid transparent;
+      border-bottom: 90px solid #d6ce15;
+      border-top: 90px solid transparent;
+      border-right: 90px solid transparent;
+      position: absolute;
+      top: 83px;
+      left: 7px;
+      transform: rotate(280deg);
+      opacity: 0.8; }
+  .triangle-about-light {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid #d6ce15;
+    border-top: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position: absolute;
+    top: -150px;
+    right: 50px;
+    transform: rotate(25deg);
+    opacity: 0.7; }
+    .triangle-about-light:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-bottom: 100px solid #d6ce15;
+      border-top: 0 solid transparent;
+      border-right: 35px solid transparent;
+      position: absolute;
+      top: 10px;
+      left: 90px;
+      transform: rotate(180deg);
+      opacity: 0.6; }
+    .triangle-about-light:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 90px solid transparent;
+      border-bottom: 90px solid #d6ce15;
+      border-top: 90px solid transparent;
+      border-right: 90px solid transparent;
+      position: absolute;
+      top: 83px;
+      left: 7px;
+      transform: rotate(280deg);
+      opacity: 0.5; } }
+
+@media (min-width: 420px) and (max-width: 767px) {
+  nav {
+    display: none; }
+  header .triangle {
+    border-left: 60px solid transparent;
+    border-bottom: 60px solid #d6ce15;
+    border-top: 60px solid transparent;
+    border-right: 60px solid transparent;
+    top: -15px;
+    left: 40px; }
+    header .triangle:before {
+      border-left: 35px solid transparent;
+      border-bottom: 70px solid #d6ce15;
+      border-top: 0 solid transparent;
+      border-right: 35px solid transparent;
+      top: 10px;
+      left: 50px; }
+    header .triangle:after {
+      border-left: 40px solid transparent;
+      border-bottom: 40px solid #d6ce15;
+      border-top: 40px solid transparent;
+      border-right: 40px solid transparent;
+      top: 63px;
+      left: -30px; }
+  header .fa-bars {
+    display: inline-block;
+    cursor: pointer; }
+    header .fa-bars:hover {
+      color: #d6ce15; }
+  header .main-header {
+    font-size: 1.6rem; }
+  header .desc-wrapper {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 5%;
+    bottom: 40px;
+    padding: 60px 5% 70px 10px; }
+    header .desc-wrapper .header-desc {
+      font-size: 1rem; }
+  header .laptop {
+    left: 52%;
+    max-height: 230px; }
+  .about-sections {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    padding-top: 20px; } }
+
+@media (max-width: 420px) {
+  header .triangle {
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid #d6ce15;
+    border-top: 40px solid transparent;
+    border-right: 40px solid transparent;
+    top: -15px;
+    left: 40px; }
+    header .triangle:before {
+      border-left: 25px solid transparent;
+      border-bottom: 50px solid #d6ce15;
+      border-top: 0 solid transparent;
+      border-right: 25px solid transparent;
+      top: 10px;
+      left: 40px; }
+    header .triangle:after {
+      border-left: 30px solid transparent;
+      border-bottom: 30px solid #d6ce15;
+      border-top: 30px solid transparent;
+      border-right: 30px solid transparent;
+      top: 53px;
+      left: -30px; }
+  header .main-header {
+    font-size: 1.2rem;
+    padding: 10px 10px 30px 10px;
+    position: absolute;
+    left: 15%;
+    width: 80%; }
+  header .desc-wrapper {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 5%;
+    bottom: 260px;
+    padding: 50px 5% 50px 10px;
+    margin-left: 10px; }
+    header .desc-wrapper .header-desc {
+      font-size: 0.7rem;
+      text-align: left;
+      padding-left: 20px; }
+  header .laptop {
+    left: 10%;
+    max-width: 200px; } }

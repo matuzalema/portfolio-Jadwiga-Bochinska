@@ -113,8 +113,7 @@ p {
 }
 // ================== section header ===========================
 header {
-  background: 
-    linear-gradient(
+  background: linear-gradient(
       0deg,
       rgba(20, 100, 137, 0.6),
       rgba(20, 100, 137, 1)
@@ -773,18 +772,32 @@ footer {
 //     right: 50px;
 //   }
 // }
-@media(min-width: 992px) and (max-width: 1199px){
- .about .about-sections .img-about .triangle-about-dark {
-   right: 120px;
- }
-};
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about .about-sections .img-about {
+    .my-img {
+      top: -30px;
+    }
 
+    .triangle-about-dark {
+      top: -400px;
+      right: 120px;
 
+      &:before {
+        opacity: 0.7;
+      }
 
+      &:after {
+        opacity: 0.5;
+      }
+    }
 
+    .triangle-about-light {
+      display: none;
+    }
+  }
+}
 
-@media(min-width: 768px) and (max-width: 991px){
-
+@media (min-width: 768px) and (max-width: 991px) {
   //  =============== media header =============================
   header {
     .triangle {
@@ -797,7 +810,7 @@ footer {
         border-right: 40px solid transparent;
       }
     }
-    .main-header{
+    .main-header {
       font-size: 2rem;
     }
 
@@ -811,105 +824,38 @@ footer {
     }
   }
   //  =============== media about=============================
-  .about .about-sections .img-about .triangle-about-dark {
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-bottom: 70px solid $additional-color;
-    border-top: 70px solid transparent;
-    border-right: 70px solid transparent;
-    position: absolute;
-    top: -450px;
-    right: 30px;
-    transform: rotate(25deg);
-    opacity: 1;
-
-    &:before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 35px solid transparent;
-      border-bottom: 100px solid #d6ce15;
-      border-top: 0 solid transparent;
-      border-right: 35px solid transparent;
-      position: absolute;
-      top: 10px;
-      left: 90px;
-      transform: rotate(180deg);
-      opacity: 0.9;
+  .about .about-sections .img-about {
+    .my-img {
+      top: 15%;
     }
 
-    &:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 90px solid transparent;
-      border-bottom: 90px solid #d6ce15;
-      border-top: 90px solid transparent;
-      border-right: 90px solid transparent;
-      position: absolute;
-      top: 83px;
-      left: 7px;
-      transform: rotate(280deg);
-      opacity: 0.8;
+    .triangle-about-dark {
+      top: -400px;
+      right: 120px;
+
+      &:before {
+        opacity: 0.7;
+      }
+
+      &:after {
+        opacity: 0.5;
+      }
+    }
+
+    .triangle-about-light {
+      display: none;
     }
   }
+}
 
-  .triangle-about-light {
-    width: 0;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-bottom: 40px solid $additional-color;
-    border-top: 40px solid transparent;
-    border-right: 40px solid transparent;
-    position: absolute;
-    top: -150px;
-    right: 50px;
-    transform: rotate(25deg);
-    opacity: 0.7;
-
-    &:before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 35px solid transparent;
-      border-bottom: 100px solid #d6ce15;
-      border-top: 0 solid transparent;
-      border-right: 35px solid transparent;
-      position: absolute;
-      top: 10px;
-      left: 90px;
-      transform: rotate(180deg);
-      opacity: 0.6;
-    }
-
-    &:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 90px solid transparent;
-      border-bottom: 90px solid #d6ce15;
-      border-top: 90px solid transparent;
-      border-right: 90px solid transparent;
-      position: absolute;
-      top: 83px;
-      left: 7px;
-      transform: rotate(280deg);
-      opacity: 0.5;
-    }
-  }
-};
-
-
-@media(min-width: 420px) and (max-width: 767px){
-
+@media (min-width: 420px) and (max-width: 767px) {
   //  =============== media header =============================
 
   nav {
     display: none;
   }
 
-   header {
+  header {
     .triangle {
       border-left: 60px solid transparent;
       border-bottom: 60px solid $additional-color;
@@ -919,12 +865,12 @@ footer {
       left: 40px;
 
       &:before {
-      border-left: 35px solid transparent;
-      border-bottom: 70px solid #d6ce15;
-      border-top: 0 solid transparent;
-      border-right: 35px solid transparent;
-      top: 10px;
-      left: 50px;
+        border-left: 35px solid transparent;
+        border-bottom: 70px solid #d6ce15;
+        border-top: 0 solid transparent;
+        border-right: 35px solid transparent;
+        top: 10px;
+        left: 50px;
       }
 
       &:after {
@@ -933,11 +879,11 @@ footer {
         border-top: 40px solid transparent;
         border-right: 40px solid transparent;
         top: 63px;
-        left: -30px;    
+        left: -30px;
       }
     }
-      
-    .fa-bars{
+
+    .fa-bars {
       display: inline-block;
       cursor: pointer;
       &:hover {
@@ -969,18 +915,75 @@ footer {
   }
 
   //  =============== media about=============================
-  .about-sections {
+  .about .about-sections {
     display: flex;
     flex-direction: column-reverse;
     padding-top: 20px;
+    align-items: center;
+
+    .about-desc {
+      text-align: center;
+      width: 80%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .img-about {
+      position: relative;
+
+      .my-img {
+        position: absolute;
+        top: -250px;
+        left: -180px;
+        width: 150px;
+      }
+
+      .triangle-about-dark {
+        top: -350px;
+        right: -120px;
+        border-left: 50px solid transparent;
+        border-bottom: 50px solid $additional-color;
+        border-top: 50px solid transparent;
+        border-right: 50px solid transparent;
+
+        &:before {
+          opacity: 0.7;
+          border-left: 25px solid transparent;
+          border-bottom: 70px solid #d6ce15;
+          border-top: 0 solid transparent;
+          border-right: 25px solid transparent;
+          left: 60px;
+        }
+
+        &:after {
+          opacity: 0.5;
+          border-left: 70px solid transparent;
+          border-bottom: 70px solid #d6ce15;
+          border-top: 70px solid transparent;
+          border-right: 70px solid transparent;
+          top: 40px;
+        }
+      }
+
+      .triangle-about-light {
+        display: none;
+      }
+    }
   }
-};
+}
 
-@media(max-width: 420px){
-
+@media (max-width: 420px) {
   //  =============== media header =============================
 
-   header {
+  header {
+    nav {
+      display: none;
+    }
+
+    .fa-bars {
+      display: block;
+    }
+    
     .triangle {
       border-left: 40px solid transparent;
       border-bottom: 40px solid $additional-color;
@@ -990,12 +993,12 @@ footer {
       left: 40px;
 
       &:before {
-      border-left: 25px solid transparent;
-      border-bottom: 50px solid #d6ce15;
-      border-top: 0 solid transparent;
-      border-right: 25px solid transparent;
-      top: 10px;
-      left: 40px;
+        border-left: 25px solid transparent;
+        border-bottom: 50px solid #d6ce15;
+        border-top: 0 solid transparent;
+        border-right: 25px solid transparent;
+        top: 10px;
+        left: 40px;
       }
 
       &:after {
@@ -1004,11 +1007,11 @@ footer {
         border-top: 30px solid transparent;
         border-right: 30px solid transparent;
         top: 53px;
-        left: -30px;    
+        left: -30px;
       }
     }
 
-     .main-header {
+    .main-header {
       font-size: 1.2rem;
       padding: 10px 10px 30px 10px;
       position: absolute;
@@ -1016,7 +1019,7 @@ footer {
       width: 80%;
     }
 
-     .desc-wrapper {
+    .desc-wrapper {
       width: 80%;
       background-color: rgba(255, 255, 255, 0.1);
       position: absolute;
@@ -1032,7 +1035,7 @@ footer {
       }
     }
 
-     .laptop {
+    .laptop {
       left: 10%;
       max-width: 200px;
     }
@@ -1040,4 +1043,99 @@ footer {
 
   //  =============== media about=============================
 
+   .about {
+      padding-top: 10px;
+      padding-bottom: 150px;
+
+    .fa-user {
+      display: none;
+    }
+
+    .about-sections {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 20px;
+      align-items: center;
+
+      .about-desc {
+        text-align: center;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        padding-top: 140px;
+        font-size: 1rem;
+      }
+
+      .img-about {
+        position: relative;
+
+        .my-img {
+          position: absolute;
+          top: -30px;
+          left: 0px;
+          width: 100px;
+          border-radius: 5%;
+        }
+
+        .triangle-about-dark {
+          top: -300px;
+          right: -120px;
+          border-left: 50px solid transparent;
+          border-bottom: 50px solid $additional-color;
+          border-top: 50px solid transparent;
+          border-right: 50px solid transparent;
+
+          &:before {
+            opacity: 0.7;
+            border-left: 25px solid transparent;
+            border-bottom: 70px solid #d6ce15;
+            border-top: 0 solid transparent;
+            border-right: 25px solid transparent;
+            left: 20px;
+            top: 70px;
+          }
+
+          &:after {
+            opacity: 0.5;
+            border-left: 30px solid transparent;
+            border-bottom: 30px solid #d6ce15;
+            border-top: 30px solid transparent;
+            border-right: 30px solid transparent;
+            top: 100px;
+            left: 40px;
+          }
+        }
+
+        .triangle-about-light {
+          display: none;
+        }
+      }
+    }
+  }
 }
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .about .about-sections .img-about .triangle-about-dark {
+      background-color: red;
+    }
+  }
+
+  // iPhone 5
+  @media screen and (device-aspect-ratio: 40/71) {
+    .header .desc-wrapper {
+        padding: 10px 0 10px 0;
+    }
+  }
+
+  //Pixel 2XL
+//   @media screen 
+//   and (device-width: 412px) 
+//   and (device-height: 823px) 
+//   and (-webkit-device-pixel-ratio: 3.5) 
+//   and (orientation: portrait) {
+//     .about .about-sections .img-about .triangle-about-dark {
+//       background-color: red;
+//     }
+// }

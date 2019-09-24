@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: $third-color;
-  
+
   .container {
     width: 100%;
     max-width: 1200px;
@@ -774,7 +774,7 @@ footer {
 //     right: 50px;
 //   }
 // }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .about .about-sections .img-about {
     .my-img {
       top: -30px;
@@ -799,11 +799,35 @@ footer {
   }
 
   .skills .soft-skills .skills-item {
-    width:50%;
+    width: 50%;
   }
+
+  .projects .project-item {
+    margin: 20px 0;
+    img {
+      margin-bottom: 20px;
+    }
+
+    .project-desc {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &:nth-child(odd) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:nth-child(even) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   //  =============== media header =============================
   header {
     .triangle {
@@ -860,7 +884,7 @@ footer {
   }
 }
 
-@media (min-width: 420px) and (max-width: 767px) {
+@media (max-width: 767px) {
   //  =============== media header =============================
   body {
     font-size: 16px;
@@ -999,13 +1023,13 @@ footer {
 
     .hexagon {
       width: 70px;
-      height: 25px;;
+      height: 25px;
       line-height: 25px;
       font-size: 10px;
       font-weight: 500;
       margin: 14px 2px;
 
-       &:before {
+      &:before {
         content: "";
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
@@ -1024,8 +1048,8 @@ footer {
 @media (max-width: 420px) {
   //  =============== media header =============================
   body {
-      font-size: 16px;
-  
+    font-size: 16px;
+
     header {
       nav {
         display: none;
@@ -1034,7 +1058,7 @@ footer {
       .fa-bars {
         display: block;
       }
-      
+
       .triangle {
         border-left: 40px solid transparent;
         border-bottom: 40px solid $additional-color;
@@ -1095,8 +1119,8 @@ footer {
     //  =============== media about=============================
 
     .about {
-        padding-top: 10px;
-        padding-bottom: 150px;
+      padding-top: 10px;
+      padding-bottom: 150px;
 
       .fa-user {
         display: none;
@@ -1200,27 +1224,24 @@ footer {
   }
 }
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .about .about-sections .img-about .triangle-about-dark {
-      background-color: red;
-    }
+    background-color: red;
   }
+}
 
-  // iPhone 5
-  @media screen and (device-aspect-ratio: 40/71) {
-    .header .desc-wrapper {
-        padding: 10px 0 10px 0;
-    }
+// iPhone 5
+@media screen and (device-aspect-ratio: 40/71) {
+  .header .desc-wrapper {
+    padding: 10px 0 10px 0;
   }
+}
 
-  //Pixel 2XL
-//   @media screen 
-//   and (device-width: 412px) 
-//   and (device-height: 823px) 
-//   and (-webkit-device-pixel-ratio: 3.5) 
+//Pixel 2XL
+//   @media screen
+//   and (device-width: 412px)
+//   and (device-height: 823px)
+//   and (-webkit-device-pixel-ratio: 3.5)
 //   and (orientation: portrait) {
 //     .about .about-sections .img-about .triangle-about-dark {
 //       background-color: red;

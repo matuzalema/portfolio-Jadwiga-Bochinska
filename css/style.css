@@ -588,7 +588,7 @@ footer {
     color: #fff;
     font-size: 12px; }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .about .about-sections .img-about .my-img {
     top: -30px; }
   .about .about-sections .img-about .triangle-about-dark {
@@ -601,9 +601,26 @@ footer {
   .about .about-sections .img-about .triangle-about-light {
     display: none; }
   .skills .soft-skills .skills-item {
-    width: 50%; } }
+    width: 50%; }
+  .projects .project-item {
+    margin: 20px 0; }
+    .projects .project-item img {
+      margin-bottom: 20px; }
+    .projects .project-item .project-desc {
+      width: 100%;
+      margin: 0 auto; }
+    .projects .project-item:nth-child(odd) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    .projects .project-item:nth-child(even) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   header .triangle {
     left: 50px; }
     header .triangle:after {
@@ -634,7 +651,7 @@ footer {
   .skills .soft-skills .skills-item {
     width: 100%; } }
 
-@media (min-width: 420px) and (max-width: 767px) {
+@media (max-width: 767px) {
   body {
     font-size: 16px; }
   nav {

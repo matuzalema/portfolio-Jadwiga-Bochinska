@@ -2,14 +2,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,600,700,800,900|Monda&display=swap&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,600,700,800,900|Monda|Roboto+Condensed&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,500, 600,700,800,900|Monda|Roboto+Condensed&display=swap&subset=latin-ext");
 * {
   box-sizing: border-box;
   margin: 0; }
 
+html,
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
+body {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: #454545; }
@@ -22,16 +28,10 @@ p {
   line-height: 1.6;
   font-weight: 300; }
 
-.first-header {
-  font-size: 50px;
-  font-weight: 100;
-  color: #fff;
-  text-align: center; }
-
 .second-header {
   text-align: center;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 2.2rem;
   padding-top: 20px;
   position: relative;
   margin-bottom: 80px; }
@@ -47,7 +47,7 @@ p {
 .third-header {
   color: #454545;
   font-weight: 700;
-  font-size: 20px; }
+  font-size: 1.2rem; }
 
 .dark {
   color: #454545; }
@@ -57,12 +57,12 @@ p {
 
 .fas {
   color: #28a5df;
-  font-size: 28px;
+  font-size: 2rem;
   text-align: center;
   display: block; }
 
 .header-icon {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   display: block;
   color: #28a5df; }
@@ -82,7 +82,7 @@ p {
   border: none;
   margin: 0 auto;
   display: block;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Poppins";
   text-decoration: none; }
   .button:hover,
@@ -113,11 +113,12 @@ header {
     right: 100px;
     top: 130px;
     font-weight: 500;
-    font-size: 42px;
-    font-family: "Roboto Condensed", sans-serif; }
+    font-size: 2.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff; }
     header .main-header::first-letter {
       color: #d6ce15;
-      font-size: 48px; }
+      font-size: 3rem; }
   header ul {
     display: -ms-flexbox;
     display: flex;
@@ -188,7 +189,7 @@ header {
     header .desc-wrapper .header-desc {
       text-align: right;
       font-weight: 400;
-      font-size: 18px; }
+      font-size: 1.2rem; }
   header .laptop {
     position: absolute;
     bottom: 50px;
@@ -201,7 +202,7 @@ header {
     position: absolute;
     display: block;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     left: calc(50% - 12.5px);
     bottom: 20px;
     animation-name: arrow;
@@ -322,21 +323,6 @@ header {
   padding-bottom: 60px; }
   .second-header .skills:after {
     border-bottom: 3px dotted #28a5df; }
-  .skills .skills-icons {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    border-radius: 50%;
-    padding-top: 30px; }
-    .skills .skills-icons .fab {
-      font-size: 40px;
-      display: block;
-      border-radius: 50%;
-      height: 300px;
-      width: 300px;
-      margin: 0;
-      border: 3px solid #28a5df; }
   .skills .soft-skills {
     display: -ms-flexbox;
     display: flex;
@@ -355,10 +341,6 @@ header {
       width: 25%; }
       .skills .soft-skills .skills-item .third-header {
         margin-bottom: 15px; }
-      .skills .soft-skills .skills-item .far {
-        font-size: 30px;
-        padding-top: 10px;
-        color: #28a5df; }
       .skills .soft-skills .skills-item .skills-desc {
         padding-left: 20px; }
   .skills .skills-icons {
@@ -454,7 +436,7 @@ header {
           margin-bottom: 10px; }
         .projects .project-item .img-wrapper .img-text .fas-project-img {
           color: white;
-          font-size: 60px; }
+          font-size: 2.5rem; }
     .projects .project-item .project-desc {
       padding: 0 50px;
       width: 50%; }
@@ -478,12 +460,12 @@ header {
             transform: rotate(45deg); }
     .projects .project-item .project-header {
       color: #454545;
-      font-size: 30px;
+      font-size: 1.7rem;
       font-weight: 600;
       margin: 0px 0 10px 0; }
     .projects .project-item .project-technology {
       margin-bottom: 30px;
-      font-size: 18px;
+      font-size: 1rem;
       font-weight: 500;
       color: #28a5df; }
     .projects .project-item .project-links {
@@ -520,7 +502,7 @@ header {
       color: #454545;
       margin: 10px 30px 50px 30px;
       transition: 0.5s;
-      font-size: 42px;
+      font-size: 2.4rem;
       background-color: white; }
       .contact .contact-media i:hover {
         color: #272727; }
@@ -535,16 +517,16 @@ header {
   .contact .contact-form {
     width: 50%;
     margin: 0 auto; }
-    .contact .contact-form .wrapper {
+    .contact .contact-form .name-email-wrapper {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-      .contact .contact-form .wrapper .form-item:first-child {
+      .contact .contact-form .name-email-wrapper .form-item:first-child {
         margin-right: 15px; }
-      .contact .contact-form .wrapper .form-item:last-child {
+      .contact .contact-form .name-email-wrapper .form-item:last-child {
         margin-left: 15px; }
     .contact .contact-form .form-item {
       display: -ms-flexbox;
@@ -570,13 +552,13 @@ header {
         height: 36px;
         padding: 0 20px;
         padding: 0 20px;
-        font-size: 18px;
+        font-size: 1rem;
         color: #454545; }
       .contact .contact-form .form-item label {
         padding-bottom: 8px;
         font-weight: 700;
-        font-size: 18px;
-        color: #4242429e; }
+        font-size: 1rem;
+        color: #454545; }
   .contact .button {
     margin-top: 15px; }
 
@@ -586,9 +568,9 @@ footer {
     text-align: center;
     line-height: 50px;
     color: #fff;
-    font-size: 12px; }
+    font-size: 0.7rem; }
 
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   .about .about-sections .img-about .my-img {
     top: -30px; }
   .about .about-sections .img-about .triangle-about-dark {
@@ -618,154 +600,178 @@ footer {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; } }
+          flex-direction: column-reverse; }
+  .contact .contact-form {
+    width: 80%; } }
 
-@media (max-width: 991px) {
-  header .triangle {
-    left: 50px; }
-    header .triangle:after {
-      border-left: 40px solid transparent;
-      border-bottom: 40px solid #d6ce15;
-      border-top: 40px solid transparent;
-      border-right: 40px solid transparent; }
-  header .main-header {
-    font-size: 2rem; }
-  header .desc-wrapper {
-    width: 40%;
-    background-color: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    left: 10%;
-    bottom: 40px;
-    padding: 90px 5% 50px 10px; }
-  .about .about-sections .img-about .my-img {
-    top: 15%; }
-  .about .about-sections .img-about .triangle-about-dark {
-    top: -400px;
-    right: 120px; }
-    .about .about-sections .img-about .triangle-about-dark:before {
-      opacity: 0.7; }
-    .about .about-sections .img-about .triangle-about-dark:after {
-      opacity: 0.5; }
-  .about .about-sections .img-about .triangle-about-light {
-    display: none; }
-  .skills .soft-skills .skills-item {
-    width: 100%; } }
-
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   body {
-    font-size: 16px; }
-  nav {
-    display: none; }
-  header .triangle {
-    border-left: 60px solid transparent;
-    border-bottom: 60px solid #d6ce15;
-    border-top: 60px solid transparent;
-    border-right: 60px solid transparent;
-    top: -15px;
-    left: 40px; }
-    header .triangle:before {
-      border-left: 35px solid transparent;
-      border-bottom: 70px solid #d6ce15;
-      border-top: 0 solid transparent;
-      border-right: 35px solid transparent;
-      top: 10px;
+    font-size: 18px; }
+    body header .triangle {
       left: 50px; }
-    header .triangle:after {
-      border-left: 40px solid transparent;
-      border-bottom: 40px solid #d6ce15;
-      border-top: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 63px;
-      left: -30px; }
-  header .fa-bars {
-    display: inline-block;
-    cursor: pointer; }
-    header .fa-bars:hover {
-      color: #d6ce15; }
-  header .main-header {
-    font-size: 1.6rem; }
-  header .desc-wrapper {
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    left: 5%;
-    bottom: 40px;
-    padding: 60px 5% 70px 10px; }
-    header .desc-wrapper .header-desc {
-      font-size: 1rem; }
-  header .laptop {
-    left: 52%;
-    max-height: 230px; }
-  .about .about-sections {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-    padding-top: 20px;
-    -ms-flex-align: center;
-        align-items: center; }
-    .about .about-sections .about-desc {
-      text-align: center;
-      width: 80%;
-      padding: 0;
-      margin: 0;
-      font-size: 1.1rem; }
-    .about .about-sections .img-about {
-      position: relative; }
-      .about .about-sections .img-about .my-img {
-        position: absolute;
-        top: -250px;
-        left: -180px;
-        width: 150px; }
-      .about .about-sections .img-about .triangle-about-dark {
-        top: -350px;
-        right: -120px;
-        border-left: 50px solid transparent;
-        border-bottom: 50px solid #d6ce15;
-        border-top: 50px solid transparent;
-        border-right: 50px solid transparent; }
-        .about .about-sections .img-about .triangle-about-dark:before {
-          opacity: 0.7;
-          border-left: 25px solid transparent;
-          border-bottom: 70px solid #d6ce15;
-          border-top: 0 solid transparent;
-          border-right: 25px solid transparent;
-          left: 60px; }
-        .about .about-sections .img-about .triangle-about-dark:after {
-          opacity: 0.5;
-          border-left: 70px solid transparent;
-          border-bottom: 70px solid #d6ce15;
-          border-top: 70px solid transparent;
-          border-right: 70px solid transparent;
-          top: 40px; }
-      .about .about-sections .img-about .triangle-about-light {
-        display: none; }
-  .skills {
-    width: 100%; }
-    .skills .soft-skills .skills-item {
-      width: 100%; }
-    .skills .skills-icons {
-      width: 410px; }
-    .skills .hexagon {
-      width: 70px;
-      height: 25px;
-      line-height: 25px;
-      font-size: 10px;
-      font-weight: 500;
-      margin: 14px 2px; }
-      .skills .hexagon:before {
-        content: "";
-        border-left: 35px solid transparent;
-        border-right: 35px solid transparent;
-        border-bottom: 25px solid #e1e2e2; }
-      .skills .hexagon:after {
-        border-left: 35px solid transparent;
-        border-right: 35px solid transparent;
-        border-top: 25px solid #e1e2e2; } }
+      body header .triangle:after {
+        border-left: 40px solid transparent;
+        border-bottom: 40px solid #d6ce15;
+        border-top: 40px solid transparent;
+        border-right: 40px solid transparent; }
+    body header .desc-wrapper {
+      width: 40%;
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      left: 10%;
+      bottom: 40px;
+      padding: 90px 5% 50px 10px; }
+    body .about .about-sections .img-about .my-img {
+      top: 15%; }
+    body .about .about-sections .img-about .triangle-about-dark {
+      top: -400px;
+      right: 120px; }
+      body .about .about-sections .img-about .triangle-about-dark:before {
+        opacity: 0.7; }
+      body .about .about-sections .img-about .triangle-about-dark:after {
+        opacity: 0.5; }
+    body .about .about-sections .img-about .triangle-about-light {
+      display: none; }
+    body .skills .soft-skills .skills-item {
+      width: 100%; } }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 767px) {
   body {
     font-size: 16px; }
+    body .second-header {
+      font-size: 1.8rem; }
+    body nav {
+      display: none; }
+    body header .triangle {
+      border-left: 60px solid transparent;
+      border-bottom: 60px solid #d6ce15;
+      border-top: 60px solid transparent;
+      border-right: 60px solid transparent;
+      top: -15px;
+      left: 40px; }
+      body header .triangle:before {
+        border-left: 35px solid transparent;
+        border-bottom: 70px solid #d6ce15;
+        border-top: 0 solid transparent;
+        border-right: 35px solid transparent;
+        top: 10px;
+        left: 50px; }
+      body header .triangle:after {
+        border-left: 40px solid transparent;
+        border-bottom: 40px solid #d6ce15;
+        border-top: 40px solid transparent;
+        border-right: 40px solid transparent;
+        top: 63px;
+        left: -30px; }
+    body header .fa-bars {
+      display: inline-block;
+      cursor: pointer; }
+      body header .fa-bars:hover {
+        color: #d6ce15; }
+    body header .main-header {
+      font-size: 1.6rem; }
+    body header .desc-wrapper {
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      left: 5%;
+      bottom: 40px;
+      padding: 60px 5% 70px 10px; }
+      body header .desc-wrapper .header-desc {
+        font-size: 1rem; }
+    body header .laptop {
+      left: 52%;
+      max-height: 230px; }
+    body .about .about-sections {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+      padding-top: 20px;
+      -ms-flex-align: center;
+          align-items: center; }
+      body .about .about-sections .about-desc {
+        text-align: center;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        font-size: 1.1rem; }
+      body .about .about-sections .img-about {
+        position: relative; }
+        body .about .about-sections .img-about .my-img {
+          position: absolute;
+          top: -250px;
+          left: -180px;
+          width: 150px; }
+        body .about .about-sections .img-about .triangle-about-dark {
+          top: -350px;
+          right: -120px;
+          border-left: 50px solid transparent;
+          border-bottom: 50px solid #d6ce15;
+          border-top: 50px solid transparent;
+          border-right: 50px solid transparent; }
+          body .about .about-sections .img-about .triangle-about-dark:before {
+            opacity: 0.7;
+            border-left: 25px solid transparent;
+            border-bottom: 70px solid #d6ce15;
+            border-top: 0 solid transparent;
+            border-right: 25px solid transparent;
+            left: 60px; }
+          body .about .about-sections .img-about .triangle-about-dark:after {
+            opacity: 0.5;
+            border-left: 70px solid transparent;
+            border-bottom: 70px solid #d6ce15;
+            border-top: 70px solid transparent;
+            border-right: 70px solid transparent;
+            top: 40px; }
+        body .about .about-sections .img-about .triangle-about-light {
+          display: none; }
+    body .skills {
+      width: 100%; }
+      body .skills .soft-skills .skills-item {
+        width: 100%; }
+      body .skills .skills-icons {
+        width: 410px; }
+      body .skills .hexagon {
+        width: 70px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 10px;
+        font-weight: 500;
+        margin: 14px 2px; }
+        body .skills .hexagon:before {
+          content: "";
+          border-left: 35px solid transparent;
+          border-right: 35px solid transparent;
+          border-bottom: 25px solid #e1e2e2; }
+        body .skills .hexagon:after {
+          border-left: 35px solid transparent;
+          border-right: 35px solid transparent;
+          border-top: 25px solid #e1e2e2; }
+    body .contact .contact-form {
+      width: 85%; }
+      body .contact .contact-form .name-email-wrapper {
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        body .contact .contact-form .name-email-wrapper .form-item:last-child {
+          margin: 0; } }
+
+@media only screen and (max-width: 420px) {
+  body {
+    font-size: 14px; }
+    body .second-header {
+      font-size: 1.6rem;
+      margin-bottom: 60px; }
+      body .second-header::after {
+        width: 80px;
+        height: 20px;
+        position: absolute;
+        top: 55px;
+        left: calc(50% - 40px); }
+    body .third-header {
+      font-size: 1rem; }
+    body .header-icon {
+      font-size: 2rem; }
     body header nav {
       display: none; }
     body header .fa-bars {
@@ -867,8 +873,11 @@ footer {
             display: none; }
     body .skills {
       width: 100%; }
-      body .skills .soft-skills .skills-item {
-        width: 100%; }
+      body .skills .soft-skills {
+        margin: -30px 10px 10px 10px; }
+        body .skills .soft-skills .skills-item {
+          width: 100%;
+          margin-top: 0; }
       body .skills .skills-icons {
         width: 340px; }
       body .skills .hexagon {
@@ -885,12 +894,163 @@ footer {
         body .skills .hexagon:after {
           border-left: 30px solid transparent;
           border-right: 30px solid transparent;
-          border-top: 25px solid #e1e2e2; } }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .about .about-sections .img-about .triangle-about-dark {
-    background-color: red; } }
+          border-top: 25px solid #e1e2e2; }
+  .projects .project-item .project-header {
+    font-size: 1.4rem; }
+  .projects .project-item .project-desc {
+    padding: 0 20px; }
+  .projects .project-item .project-links .project-link {
+    margin: 20px 0; }
+    .projects .project-item .project-links .project-link:nth-child(2) {
+      margin-left: 20px; } }
 
 @media screen and (device-aspect-ratio: 40 / 71) {
-  .header .desc-wrapper {
-    padding: 10px 0 10px 0; } }
+  body .header .main-header {
+    padding: 10px;
+    width: 75%;
+    left: 20%; }
+  body .header .desc-wrapper {
+    width: 75%;
+    left: 5%;
+    padding: 10px 0; }
+  body .header .laptop {
+    max-height: 170px; } }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  body .header .main-header {
+    padding: 30px 20px 90px 20px;
+    width: 75%;
+    left: 20%; }
+  body .header .desc-wrapper {
+    width: 75%;
+    left: 5%;
+    padding: 80px 10px 50px 10px; }
+  body .header .laptop {
+    max-height: 320px;
+    bottom: 100px; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body .header .main-header {
+    padding: 30px 20px 110px 20px;
+    width: 75%;
+    left: 20%;
+    top: 230px; }
+  body .header .desc-wrapper {
+    width: 75%;
+    left: 5%;
+    padding: 100px 10px 50px 10px;
+    bottom: 350px; }
+    body .header .desc-wrapper .header-desc {
+      text-align: left;
+      margin-left: 30px; }
+  body .header .laptop {
+    max-height: 320px;
+    bottom: 100px; } }
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body .header .triangle {
+    top: 40px;
+    left: 60px; }
+  body .header .main-header {
+    padding: 80px 20px 160px 20px;
+    width: 65%;
+    left: 30%;
+    top: 230px;
+    font-size: 3rem; }
+  body .header .desc-wrapper {
+    width: 65%;
+    left: 5%;
+    padding: 130px 10px 50px 10px;
+    bottom: 550px; }
+    body .header .desc-wrapper .header-desc {
+      margin-left: 70px;
+      font-size: 1.5rem; }
+  body .header .laptop {
+    max-height: 420px;
+    bottom: 100px; } }
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  body header .laptop {
+    bottom: 100px;
+    max-height: 1475px; }
+  body header .main-header {
+    padding: 80px 40px;
+    font-size: 13rem; }
+  body header .desc-wrapper {
+    width: 40%;
+    bottom: 130px;
+    padding: 80px 30px; }
+    body header .desc-wrapper .header-desc {
+      font-size: 1.6rem; }
+  body header .triangle {
+    left: 100px;
+    top: -20px; } }
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  header .laptop {
+    bottom: 100px;
+    max-height: 345px; }
+  header .main-header {
+    padding: 80px 40px;
+    font-size: 3rem; }
+  header .desc-wrapper {
+    width: 40%;
+    bottom: 130px;
+    padding: 80px 30px; }
+    header .desc-wrapper .header-desc {
+      font-size: 1.1rem; }
+  header .triangle {
+    left: 100px;
+    top: -20px; } }
+
+@media (max-width: 1199px) and (orientation: landscape) {
+  header .triangle {
+    left: 50px; } }
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body header .laptop {
+    bottom: 20px;
+    max-height: 175px;
+    left: 44%; }
+  body header .main-header {
+    width: 50%;
+    padding: 30px;
+    top: 26%;
+    font-weight: 500;
+    font-size: 1.5rem; }
+  body header .desc-wrapper {
+    width: 40%;
+    left: 3%;
+    bottom: 10%;
+    padding: 20px 30px 20px 30px; }
+    body header .desc-wrapper .header-desc {
+      font-size: 0.7rem; } }
+
+@media (max-width: 800px) and (orientation: landscape) {
+  body header .laptop {
+    bottom: 20px;
+    max-height: 165px; }
+  body header .main-header {
+    width: 60%;
+    top: 15%;
+    right: 50px; }
+  .about {
+    padding-bottom: 150px; } }
+
+@media (max-width: 600px) and (orientation: landscape) {
+  body header .main-header {
+    width: 50%;
+    padding: 20px;
+    top: 17%;
+    right: 65px;
+    font-size: 1.2rem; }
+  body header .desc-wrapper .header-desc {
+    font-size: 0.6rem; }
+  body header .triangle {
+    left: 30px;
+    top: -50px; }
+    body header .triangle:after {
+      border-left: 30px solid transparent;
+      border-bottom: 30px solid #d6ce15;
+      border-top: 30px solid transparent;
+      border-right: 30px solid transparent; } }

@@ -1,7 +1,7 @@
 /*----------Animate items-----------*/
 window.sr = ScrollReveal();
-sr.reveal(".first-header", {
-  delay: 500,
+sr.reveal(".main-header", {
+  delay: 800,
   duration: 2000,
   mobile: true
 });
@@ -18,34 +18,10 @@ sr.reveal(".fa-comments", {
   duration: 2000
 });
 
-sr.reveal(".project-links", {
-  delay: 1000,
-  mobile: true,
-  duration: 2000
-});
-
-sr.reveal("input", {
-  delay: 1000,
-  mobile: true,
-  duration: 2000
-});
-
-sr.reveal("textarea", {
-  delay: 500,
-  mobile: true,
-  duration: 2000
-});
-
 sr.reveal(".fa-angle-double-down", {
   delay: 3000,
   mobile: true,
   duration: 4000
-});
-
-sr.reveal(".hexagon", {
-  delay: 1000,
-  mobile: true,
-  duration: 2000
 });
 
 /*--------------scroll site---------------------*/
@@ -64,12 +40,21 @@ $(document).ready(function() {
 });
 
 // mobile nav
-const bar = document.querySelector(".fas");
-const nav = document.getElementsByTagName("nav");
+const bar = document.querySelector(".hamburger");
+const navigation = document.querySelector(".top-nav");
+const linkNav = document.querySelectorAll(".nav-a");
 
-// bar.addEventListener("click", function() {
-//   nav.classList.add("visible");
 
-//   }
-// });
-//
+bar.addEventListener("click", function() {
+  navigation.classList.remove("not-visible");
+});
+
+navigation.addEventListener("click", function(){
+  navigation.classList.add("not-visible");
+});
+
+for(let i=0; i<linkNav.length; i++){
+  linkNav[i].addEventListener("click", function(){
+    navigation.classList.add("not-visible");
+  })
+}

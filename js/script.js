@@ -62,3 +62,14 @@ $(document).ready(function() {
     return false;
   });
 });
+
+// mobile nav
+const bar = document.querySelector(".fas");
+const nav = document.getElementsByTagName("nav");
+
+// bar.addEventListener("click", function() {
+//   nav.classList.add("visible");
+
+//   }
+// });
+//

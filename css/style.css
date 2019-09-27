@@ -13,11 +13,11 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 20px; }
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
   color: #454545; }
   body .container {
     width: 100%;
@@ -93,6 +93,9 @@ p {
 .additional-color {
   color: #d6ce15; }
 
+.visible {
+  display: block; }
+
 header {
   background: linear-gradient(0deg, rgba(20, 100, 137, 0.6), #146489), url(../images/cubism4.jpg);
   background-size: cover;
@@ -113,7 +116,7 @@ header {
     right: 100px;
     top: 130px;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Roboto Condensed", sans-serif;
     color: #fff; }
     header .main-header::first-letter {
@@ -135,7 +138,7 @@ header {
         text-decoration: none;
         text-transform: uppercase;
         padding: 1.5rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 300; }
         header ul li a:hover {
           border-bottom: 3px solid #d6ce15; }
@@ -189,7 +192,7 @@ header {
     header .desc-wrapper .header-desc {
       text-align: right;
       font-weight: 400;
-      font-size: 1.2rem; }
+      font-size: 0.9rem; }
   header .laptop {
     position: absolute;
     bottom: 50px;
@@ -571,259 +574,122 @@ footer {
     font-size: 0.7rem; }
 
 @media only screen and (max-width: 1199px) {
-  .about .about-sections .img-about .my-img {
-    top: -30px; }
-  .about .about-sections .img-about .triangle-about-dark {
-    top: -400px;
-    right: 120px; }
-    .about .about-sections .img-about .triangle-about-dark:before {
-      opacity: 0.7; }
-    .about .about-sections .img-about .triangle-about-dark:after {
-      opacity: 0.5; }
-  .about .about-sections .img-about .triangle-about-light {
-    display: none; }
-  .skills .soft-skills .skills-item {
-    width: 50%; }
-  .projects .project-item {
-    margin: 20px 0; }
-    .projects .project-item img {
-      margin-bottom: 20px; }
-    .projects .project-item .project-desc {
-      width: 100%;
-      margin: 0 auto; }
-    .projects .project-item:nth-child(odd) {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-    .projects .project-item:nth-child(even) {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
-  .contact .contact-form {
-    width: 80%; } }
-
-@media only screen and (max-width: 991px) {
-  body {
-    font-size: 18px; }
-    body header .triangle {
-      left: 50px; }
-      body header .triangle:after {
-        border-left: 40px solid transparent;
-        border-bottom: 40px solid #d6ce15;
-        border-top: 40px solid transparent;
-        border-right: 40px solid transparent; }
-    body header .desc-wrapper {
-      width: 40%;
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      left: 10%;
-      bottom: 40px;
-      padding: 90px 5% 50px 10px; }
-    body .about .about-sections .img-about .my-img {
-      top: 15%; }
-    body .about .about-sections .img-about .triangle-about-dark {
+  html {
+    font-size: 20px; }
+    html .about .about-sections .img-about .my-img {
+      top: -30px; }
+    html .about .about-sections .img-about .triangle-about-dark {
       top: -400px;
       right: 120px; }
-      body .about .about-sections .img-about .triangle-about-dark:before {
+      html .about .about-sections .img-about .triangle-about-dark:before {
         opacity: 0.7; }
-      body .about .about-sections .img-about .triangle-about-dark:after {
+      html .about .about-sections .img-about .triangle-about-dark:after {
         opacity: 0.5; }
-    body .about .about-sections .img-about .triangle-about-light {
+    html .about .about-sections .img-about .triangle-about-light {
       display: none; }
-    body .skills .soft-skills .skills-item {
-      width: 100%; } }
-
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 16px; }
-    body .second-header {
-      font-size: 1.8rem; }
-    body nav {
-      display: none; }
-    body header .triangle {
-      border-left: 60px solid transparent;
-      border-bottom: 60px solid #d6ce15;
-      border-top: 60px solid transparent;
-      border-right: 60px solid transparent;
-      top: -15px;
-      left: 40px; }
-      body header .triangle:before {
-        border-left: 35px solid transparent;
-        border-bottom: 70px solid #d6ce15;
-        border-top: 0 solid transparent;
-        border-right: 35px solid transparent;
-        top: 10px;
-        left: 50px; }
-      body header .triangle:after {
-        border-left: 40px solid transparent;
-        border-bottom: 40px solid #d6ce15;
-        border-top: 40px solid transparent;
-        border-right: 40px solid transparent;
-        top: 63px;
-        left: -30px; }
-    body header .fa-bars {
-      display: inline-block;
-      cursor: pointer; }
-      body header .fa-bars:hover {
-        color: #d6ce15; }
-    body header .main-header {
-      font-size: 1.6rem; }
-    body header .desc-wrapper {
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      left: 5%;
-      bottom: 40px;
-      padding: 60px 5% 70px 10px; }
-      body header .desc-wrapper .header-desc {
-        font-size: 1rem; }
-    body header .laptop {
-      left: 52%;
-      max-height: 230px; }
-    body .about .about-sections {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-      padding-top: 20px;
-      -ms-flex-align: center;
-          align-items: center; }
-      body .about .about-sections .about-desc {
-        text-align: center;
-        width: 80%;
-        padding: 0;
-        margin: 0;
-        font-size: 1.1rem; }
-      body .about .about-sections .img-about {
-        position: relative; }
-        body .about .about-sections .img-about .my-img {
-          position: absolute;
-          top: -250px;
-          left: -180px;
-          width: 150px; }
-        body .about .about-sections .img-about .triangle-about-dark {
-          top: -350px;
-          right: -120px;
-          border-left: 50px solid transparent;
-          border-bottom: 50px solid #d6ce15;
-          border-top: 50px solid transparent;
-          border-right: 50px solid transparent; }
-          body .about .about-sections .img-about .triangle-about-dark:before {
-            opacity: 0.7;
-            border-left: 25px solid transparent;
-            border-bottom: 70px solid #d6ce15;
-            border-top: 0 solid transparent;
-            border-right: 25px solid transparent;
-            left: 60px; }
-          body .about .about-sections .img-about .triangle-about-dark:after {
-            opacity: 0.5;
-            border-left: 70px solid transparent;
-            border-bottom: 70px solid #d6ce15;
-            border-top: 70px solid transparent;
-            border-right: 70px solid transparent;
-            top: 40px; }
-        body .about .about-sections .img-about .triangle-about-light {
-          display: none; }
-    body .skills {
-      width: 100%; }
-      body .skills .soft-skills .skills-item {
-        width: 100%; }
-      body .skills .skills-icons {
-        width: 410px; }
-      body .skills .hexagon {
-        width: 70px;
-        height: 25px;
-        line-height: 25px;
-        font-size: 10px;
-        font-weight: 500;
-        margin: 14px 2px; }
-        body .skills .hexagon:before {
-          content: "";
-          border-left: 35px solid transparent;
-          border-right: 35px solid transparent;
-          border-bottom: 25px solid #e1e2e2; }
-        body .skills .hexagon:after {
-          border-left: 35px solid transparent;
-          border-right: 35px solid transparent;
-          border-top: 25px solid #e1e2e2; }
-    body .contact .contact-form {
-      width: 85%; }
-      body .contact .contact-form .name-email-wrapper {
+    html .skills .soft-skills .skills-item {
+      width: 50%; }
+    html .projects .project-item {
+      margin: 20px 0; }
+      html .projects .project-item img {
+        margin-bottom: 20px; }
+      html .projects .project-item .project-desc {
+        width: 100%;
+        margin: 0 auto; }
+      html .projects .project-item:nth-child(odd) {
+        display: -ms-flexbox;
+        display: flex;
         -ms-flex-direction: column;
             flex-direction: column; }
-        body .contact .contact-form .name-email-wrapper .form-item:last-child {
-          margin: 0; } }
+      html .projects .project-item:nth-child(even) {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    html .contact .contact-form {
+      width: 80%; } }
 
-@media only screen and (max-width: 420px) {
-  body {
-    font-size: 14px; }
-    body .second-header {
-      font-size: 1.6rem;
-      margin-bottom: 60px; }
-      body .second-header::after {
-        width: 80px;
-        height: 20px;
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 18px; }
+    html body {
+      font-size: 18px; }
+      html body header .triangle {
+        left: 50px; }
+        html body header .triangle:after {
+          border-left: 40px solid transparent;
+          border-bottom: 40px solid #d6ce15;
+          border-top: 40px solid transparent;
+          border-right: 40px solid transparent; }
+      html body header .desc-wrapper {
+        width: 40%;
+        background-color: rgba(255, 255, 255, 0.1);
         position: absolute;
-        top: 55px;
-        left: calc(50% - 40px); }
-    body .third-header {
-      font-size: 1rem; }
-    body .header-icon {
-      font-size: 2rem; }
-    body header nav {
-      display: none; }
-    body header .fa-bars {
-      display: block; }
-    body header .triangle {
-      border-left: 40px solid transparent;
-      border-bottom: 40px solid #d6ce15;
-      border-top: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: -15px;
-      left: 40px; }
-      body header .triangle:before {
-        border-left: 25px solid transparent;
-        border-bottom: 50px solid #d6ce15;
-        border-top: 0 solid transparent;
-        border-right: 25px solid transparent;
-        top: 10px;
-        left: 40px; }
-      body header .triangle:after {
-        border-left: 30px solid transparent;
-        border-bottom: 30px solid #d6ce15;
-        border-top: 30px solid transparent;
-        border-right: 30px solid transparent;
-        top: 53px;
-        left: -30px; }
-    body header .main-header {
-      font-size: 1.2rem;
-      padding: 10px 10px 30px 10px;
-      position: absolute;
-      left: 15%;
-      width: 80%; }
-    body header .desc-wrapper {
-      width: 80%;
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      left: 5%;
-      bottom: 40%;
-      padding: 50px 5% 50px 10px;
-      margin-left: 10px; }
-      body header .desc-wrapper .header-desc {
-        font-size: 0.7rem;
-        text-align: left;
-        padding-left: 20px; }
-    body header .laptop {
-      left: 10%;
-      max-width: 200px; }
-    body .about {
-      padding-top: 10px;
-      padding-bottom: 150px; }
-      body .about .fa-user {
+        left: 10%;
+        bottom: 40px;
+        padding: 90px 5% 50px 10px; }
+      html body .about .about-sections .img-about .my-img {
+        top: 15%; }
+      html body .about .about-sections .img-about .triangle-about-dark {
+        top: -400px;
+        right: 120px; }
+        html body .about .about-sections .img-about .triangle-about-dark:before {
+          opacity: 0.7; }
+        html body .about .about-sections .img-about .triangle-about-dark:after {
+          opacity: 0.5; }
+      html body .about .about-sections .img-about .triangle-about-light {
         display: none; }
-      body .about .about-sections {
+      html body .skills .soft-skills .skills-item {
+        width: 100%; } }
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 16px; }
+    html body {
+      font-size: 16px; }
+      html body .second-header {
+        font-size: 1.8rem; }
+      html body nav {
+        display: none; }
+      html body header .triangle {
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid #d6ce15;
+        border-top: 60px solid transparent;
+        border-right: 60px solid transparent;
+        top: -15px;
+        left: 40px; }
+        html body header .triangle:before {
+          border-left: 35px solid transparent;
+          border-bottom: 70px solid #d6ce15;
+          border-top: 0 solid transparent;
+          border-right: 35px solid transparent;
+          top: 10px;
+          left: 50px; }
+        html body header .triangle:after {
+          border-left: 40px solid transparent;
+          border-bottom: 40px solid #d6ce15;
+          border-top: 40px solid transparent;
+          border-right: 40px solid transparent;
+          top: 63px;
+          left: -30px; }
+      html body header .fa-bars {
+        display: inline-block;
+        cursor: pointer; }
+        html body header .fa-bars:hover {
+          color: #d6ce15; }
+      html body header .desc-wrapper {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        left: 5%;
+        bottom: 40px;
+        padding: 60px 5% 70px 10px; }
+        html body header .desc-wrapper .header-desc {
+          font-size: 1rem; }
+      html body header .laptop {
+        left: 52%;
+        max-height: 230px; }
+      html body .about .about-sections {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column-reverse;
@@ -831,78 +697,220 @@ footer {
         padding-top: 20px;
         -ms-flex-align: center;
             align-items: center; }
-        body .about .about-sections .about-desc {
+        html body .about .about-sections .about-desc {
           text-align: center;
           width: 80%;
           padding: 0;
           margin: 0;
-          padding-top: 140px;
-          font-size: 1rem; }
-        body .about .about-sections .img-about {
+          font-size: 1.1rem; }
+        html body .about .about-sections .img-about {
           position: relative; }
-          body .about .about-sections .img-about .my-img {
+          html body .about .about-sections .img-about .my-img {
             position: absolute;
-            top: -30px;
-            left: 0px;
-            width: 100px;
-            border-radius: 5%; }
-          body .about .about-sections .img-about .triangle-about-dark {
-            top: -300px;
+            top: -250px;
+            left: -180px;
+            width: 150px; }
+          html body .about .about-sections .img-about .triangle-about-dark {
+            top: -350px;
             right: -120px;
             border-left: 50px solid transparent;
             border-bottom: 50px solid #d6ce15;
             border-top: 50px solid transparent;
             border-right: 50px solid transparent; }
-            body .about .about-sections .img-about .triangle-about-dark:before {
+            html body .about .about-sections .img-about .triangle-about-dark:before {
               opacity: 0.7;
               border-left: 25px solid transparent;
               border-bottom: 70px solid #d6ce15;
               border-top: 0 solid transparent;
               border-right: 25px solid transparent;
-              left: 20px;
-              top: 70px; }
-            body .about .about-sections .img-about .triangle-about-dark:after {
+              left: 60px; }
+            html body .about .about-sections .img-about .triangle-about-dark:after {
               opacity: 0.5;
-              border-left: 30px solid transparent;
-              border-bottom: 30px solid #d6ce15;
-              border-top: 30px solid transparent;
-              border-right: 30px solid transparent;
-              top: 100px;
-              left: 40px; }
-          body .about .about-sections .img-about .triangle-about-light {
+              border-left: 70px solid transparent;
+              border-bottom: 70px solid #d6ce15;
+              border-top: 70px solid transparent;
+              border-right: 70px solid transparent;
+              top: 40px; }
+          html body .about .about-sections .img-about .triangle-about-light {
             display: none; }
-    body .skills {
-      width: 100%; }
-      body .skills .soft-skills {
-        margin: -30px 10px 10px 10px; }
-        body .skills .soft-skills .skills-item {
-          width: 100%;
-          margin-top: 0; }
-      body .skills .skills-icons {
-        width: 340px; }
-      body .skills .hexagon {
-        width: 60px;
-        height: 25px;
-        line-height: 25px;
-        font-size: 10px;
-        font-weight: 500;
-        margin: 14px 4px; }
-        body .skills .hexagon:before {
+      html body .skills {
+        width: 100%; }
+        html body .skills .soft-skills .skills-item {
+          width: 100%; }
+        html body .skills .skills-icons {
+          width: 410px; }
+        html body .skills .hexagon {
+          width: 70px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 10px;
+          font-weight: 500;
+          margin: 14px 2px; }
+          html body .skills .hexagon:before {
+            content: "";
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-bottom: 25px solid #e1e2e2; }
+          html body .skills .hexagon:after {
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-top: 25px solid #e1e2e2; }
+      html body .contact .contact-form {
+        width: 85%; }
+        html body .contact .contact-form .name-email-wrapper {
+          -ms-flex-direction: column;
+              flex-direction: column; }
+          html body .contact .contact-form .name-email-wrapper .form-item:last-child {
+            margin: 0; } }
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 14px; }
+    html body {
+      font-size: 14px; }
+      html body .second-header {
+        font-size: 1.6rem;
+        margin-bottom: 60px; }
+        html body .second-header::after {
+          width: 80px;
+          height: 20px;
+          position: absolute;
+          top: 55px;
+          left: calc(50% - 40px); }
+      html body .third-header {
+        font-size: 1rem; }
+      html body .header-icon {
+        font-size: 2rem; }
+      html body header nav {
+        display: none; }
+      html body header .fa-bars {
+        display: block; }
+      html body header .triangle {
+        border-left: 40px solid transparent;
+        border-bottom: 40px solid #d6ce15;
+        border-top: 40px solid transparent;
+        border-right: 40px solid transparent;
+        top: -15px;
+        left: 40px; }
+        html body header .triangle:before {
+          border-left: 25px solid transparent;
+          border-bottom: 50px solid #d6ce15;
+          border-top: 0 solid transparent;
+          border-right: 25px solid transparent;
+          top: 10px;
+          left: 40px; }
+        html body header .triangle:after {
           border-left: 30px solid transparent;
+          border-bottom: 30px solid #d6ce15;
+          border-top: 30px solid transparent;
           border-right: 30px solid transparent;
-          border-bottom: 25px solid #e1e2e2; }
-        body .skills .hexagon:after {
-          border-left: 30px solid transparent;
-          border-right: 30px solid transparent;
-          border-top: 25px solid #e1e2e2; }
-  .projects .project-item .project-header {
-    font-size: 1.4rem; }
-  .projects .project-item .project-desc {
-    padding: 0 20px; }
-  .projects .project-item .project-links .project-link {
-    margin: 20px 0; }
-    .projects .project-item .project-links .project-link:nth-child(2) {
-      margin-left: 20px; } }
+          top: 53px;
+          left: -30px; }
+      html body header .main-header {
+        padding: 10px 10px 30px 10px;
+        position: absolute;
+        left: 15%;
+        width: 80%; }
+      html body header .desc-wrapper {
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        left: 5%;
+        bottom: 38%;
+        padding: 40px 5% 50px 10px;
+        margin-left: 10px; }
+        html body header .desc-wrapper .header-desc {
+          font-size: 0.7rem;
+          text-align: left;
+          padding-left: 20px; }
+      html body header .laptop {
+        left: 10%;
+        max-width: 200px; }
+      html body .about {
+        padding-top: 10px;
+        padding-bottom: 150px; }
+        html body .about .fa-user {
+          display: none; }
+        html body .about .about-sections {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+          padding-top: 20px;
+          -ms-flex-align: center;
+              align-items: center; }
+          html body .about .about-sections .about-desc {
+            text-align: center;
+            width: 80%;
+            padding: 0;
+            margin: 0;
+            padding-top: 140px;
+            font-size: 1rem; }
+          html body .about .about-sections .img-about {
+            position: relative; }
+            html body .about .about-sections .img-about .my-img {
+              position: absolute;
+              top: -30px;
+              left: 0px;
+              width: 100px;
+              border-radius: 5%; }
+            html body .about .about-sections .img-about .triangle-about-dark {
+              top: -300px;
+              right: -120px;
+              border-left: 50px solid transparent;
+              border-bottom: 50px solid #d6ce15;
+              border-top: 50px solid transparent;
+              border-right: 50px solid transparent; }
+              html body .about .about-sections .img-about .triangle-about-dark:before {
+                opacity: 0.7;
+                border-left: 25px solid transparent;
+                border-bottom: 70px solid #d6ce15;
+                border-top: 0 solid transparent;
+                border-right: 25px solid transparent;
+                left: 20px;
+                top: 70px; }
+              html body .about .about-sections .img-about .triangle-about-dark:after {
+                opacity: 0.5;
+                border-left: 30px solid transparent;
+                border-bottom: 30px solid #d6ce15;
+                border-top: 30px solid transparent;
+                border-right: 30px solid transparent;
+                top: 100px;
+                left: 40px; }
+            html body .about .about-sections .img-about .triangle-about-light {
+              display: none; }
+      html body .skills {
+        width: 100%; }
+        html body .skills .soft-skills {
+          margin: -30px 10px 10px 10px; }
+          html body .skills .soft-skills .skills-item {
+            width: 100%;
+            margin-top: 0; }
+        html body .skills .skills-icons {
+          width: 340px; }
+        html body .skills .hexagon {
+          width: 60px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 10px;
+          font-weight: 500;
+          margin: 14px 4px; }
+          html body .skills .hexagon:before {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 25px solid #e1e2e2; }
+          html body .skills .hexagon:after {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 25px solid #e1e2e2; }
+    html .projects .project-item .project-header {
+      font-size: 1.4rem; }
+    html .projects .project-item .project-desc {
+      padding: 0 20px; }
+    html .projects .project-item .project-links .project-link {
+      margin: 20px 0; }
+      html .projects .project-item .project-links .project-link:nth-child(2) {
+        margin-left: 20px; } }
 
 @media screen and (device-aspect-ratio: 40 / 71) {
   body .header .main-header {
@@ -955,8 +963,7 @@ footer {
     padding: 80px 20px 160px 20px;
     width: 65%;
     left: 30%;
-    top: 230px;
-    font-size: 3rem; }
+    top: 230px; }
   body .header .desc-wrapper {
     width: 65%;
     left: 5%;
@@ -964,7 +971,7 @@ footer {
     bottom: 550px; }
     body .header .desc-wrapper .header-desc {
       margin-left: 70px;
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
   body .header .laptop {
     max-height: 420px;
     bottom: 100px; } }
@@ -974,8 +981,7 @@ footer {
     bottom: 100px;
     max-height: 1475px; }
   body header .main-header {
-    padding: 80px 40px;
-    font-size: 13rem; }
+    padding: 80px 40px; }
   body header .desc-wrapper {
     width: 40%;
     bottom: 130px;
@@ -987,21 +993,22 @@ footer {
     top: -20px; } }
 
 @media (min-width: 1200px) and (orientation: landscape) {
-  header .laptop {
-    bottom: 100px;
-    max-height: 345px; }
-  header .main-header {
-    padding: 80px 40px;
-    font-size: 3rem; }
-  header .desc-wrapper {
-    width: 40%;
-    bottom: 130px;
-    padding: 80px 30px; }
-    header .desc-wrapper .header-desc {
-      font-size: 1.1rem; }
-  header .triangle {
-    left: 100px;
-    top: -20px; } }
+  html {
+    font-size: 20px; }
+    html header .laptop {
+      bottom: 70px;
+      max-height: 345px; }
+    html header .main-header {
+      padding: 80px 40px; }
+    html header .desc-wrapper {
+      width: 40%;
+      bottom: 100px;
+      padding: 80px 30px; }
+      html header .desc-wrapper .header-desc {
+        font-size: 0.9rem; }
+    html header .triangle {
+      left: 100px;
+      top: -20px; } }
 
 @media (max-width: 1199px) and (orientation: landscape) {
   header .triangle {
@@ -1010,47 +1017,55 @@ footer {
 @media (max-width: 900px) and (orientation: landscape) {
   body header .laptop {
     bottom: 20px;
-    max-height: 175px;
+    max-height: 275px;
     left: 44%; }
   body header .main-header {
     width: 50%;
     padding: 30px;
     top: 26%;
-    font-weight: 500;
-    font-size: 1.5rem; }
+    font-weight: 500; }
   body header .desc-wrapper {
     width: 40%;
     left: 3%;
     bottom: 10%;
-    padding: 20px 30px 20px 30px; }
+    padding: 80px 30px 20px 30px; }
     body header .desc-wrapper .header-desc {
-      font-size: 0.7rem; } }
+      font-size: 1rem; } }
 
 @media (max-width: 800px) and (orientation: landscape) {
-  body header .laptop {
-    bottom: 20px;
-    max-height: 165px; }
-  body header .main-header {
-    width: 60%;
-    top: 15%;
-    right: 50px; }
-  .about {
-    padding-bottom: 150px; } }
+  html {
+    font-size: 18px; }
+    html body header .laptop {
+      bottom: 20px;
+      max-height: 265px; }
+    html body header .main-header {
+      width: 60%;
+      top: 15%;
+      right: 50px; }
+    html .about {
+      padding-bottom: 150px; } }
 
 @media (max-width: 600px) and (orientation: landscape) {
-  body header .main-header {
-    width: 50%;
-    padding: 20px;
-    top: 17%;
-    right: 65px;
-    font-size: 1.2rem; }
-  body header .desc-wrapper .header-desc {
-    font-size: 0.6rem; }
-  body header .triangle {
-    left: 30px;
-    top: -50px; }
-    body header .triangle:after {
-      border-left: 30px solid transparent;
-      border-bottom: 30px solid #d6ce15;
-      border-top: 30px solid transparent;
-      border-right: 30px solid transparent; } }
+  html {
+    font-size: 18px; }
+    html body header .main-header {
+      width: 50%;
+      padding: 20px;
+      top: 17%;
+      right: 65px; }
+    html body header .desc-wrapper .header-desc {
+      font-size: 0.6rem; }
+    html body header .triangle {
+      left: 30px;
+      top: -50px; }
+      html body header .triangle:after {
+        border-left: 30px solid transparent;
+        border-bottom: 30px solid #d6ce15;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent; } }
+
+@media (max-width: 830px) and (max-height: 420px) {
+  html {
+    font-size: 12px; }
+    html body header .laptop {
+      max-height: 175px; } }

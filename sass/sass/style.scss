@@ -116,10 +116,6 @@ p {
 .not-visible {
   display: none;
 }
-
-.visible {
-  display: inline-block;
-}
 // ================== section header ===========================
 header {
   background: linear-gradient(
@@ -233,21 +229,19 @@ header {
   }
 
   .desc-wrapper {
-    width: 40%;
+    width: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 7% 0% 5% 0%;
+    padding: 10% 0% 5% 0%;
+    text-align: center;
     position: absolute;
     left: 7%;
     bottom: 50px;
-    padding-right: 5%;
-    z-index: 0;
+    padding-right: 10%;
 
     .header-desc {
       text-align: right;
       font-weight: 400;
       font-size: 0.9rem;
-      position: relative;
-      z-index: -1;
     }
   }
 
@@ -753,28 +747,10 @@ footer {
 
 // ================== media ===========================
 
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   html {
     font-size: 20px;
 
-    header {
-      .triangle {
-        left: 60px;
-        top: -30px;
-      }
-
-      .desc-wrapper {
-        padding: 80px 50px 50px 50px;
-        left: 8%;
-        width: 45%;
-        bottom: 100px;
-      }
-      .laptop {
-        left: 57%;
-        max-height: 320px;
-        bottom: 70px;
-      }
-    }
     .about .about-sections .img-about {
       .my-img {
         top: -30px;
@@ -829,7 +805,7 @@ footer {
     }
   }
 }
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   html {
     font-size: 18px;
 
@@ -850,17 +826,12 @@ footer {
         }
 
         .desc-wrapper {
-          width: 50%;
+          width: 40%;
           background-color: rgba(255, 255, 255, 0.1);
           position: absolute;
-          left: 5%;
-          bottom: 110px;
+          left: 10%;
+          bottom: 40px;
           padding: 90px 5% 50px 10px;
-        }
-
-        .laptop {
-          bottom: 90px;
-          max-height: 300px;
         }
       }
       //  =============== media about=============================
@@ -896,7 +867,7 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   html {
     font-size: 16px;
     //  =============== media header =============================
@@ -904,29 +875,28 @@ footer {
       font-size: 16px;
 
       .second-header {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
 
       nav {
-        // display: none;
+        display: none;
         display: flex;
         justify-content: flex-end;
         text-align: center;
 
         ul {
           background-color: #104c69;
-          display: none;
           max-width: 200px;
           width: 100%;
           display: flex;
           flex-direction: column;
           padding: 0;
+          padding-bottom: 20px;
 
           li {
             padding: 20px 0;
             margin: 0 auto;
             width: 100%;
-            display: none;
 
             a {
               font-size: 1rem;
@@ -971,31 +941,22 @@ footer {
           }
         }
 
-        .main-header {
-          width: 80%;
-          left: 10%;
-          padding: 30px;
-          top: 170px;
-        }
-
         .desc-wrapper {
-          display: none;
-          width: 80%;
+          width: 50%;
           background-color: rgba(255, 255, 255, 0.1);
           position: absolute;
           left: 5%;
-          bottom: 80px;
-          padding: 30px;
+          bottom: 40px;
+          padding: 60px 5% 70px 10px;
 
           .header-desc {
-            font-size: 0.9rem;
+            font-size: 1rem;
           }
         }
 
         .laptop {
-          left: calc(50% - 150px);
-          max-height: 300px;
-          bottom: 50px;
+          left: 52%;
+          max-height: 230px;
         }
       }
 
@@ -1106,7 +1067,7 @@ footer {
   }
 }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   html {
     font-size: 14px;
     //  =============== media header =============================
@@ -1137,7 +1098,7 @@ footer {
 
       header {
         nav {
-          // display: none;
+          display: none;
           display: flex;
           justify-content: flex-end;
           text-align: center;
@@ -1149,6 +1110,7 @@ footer {
             display: flex;
             flex-direction: column;
             padding: 0;
+            padding-bottom: 40px;
 
             li {
               padding: 30px 0;
@@ -1194,9 +1156,9 @@ footer {
         }
 
         .main-header {
-          padding: 20px;
+          padding: 10px 10px 30px 10px;
           position: absolute;
-          left: 10%;
+          left: 15%;
           width: 80%;
         }
 
@@ -1217,9 +1179,8 @@ footer {
         }
 
         .laptop {
-          left: calc(50% - 130px);
-          max-width: 260px;
-          bottom: 90px;
+          left: 10%;
+          max-width: 200px;
         }
       }
 
@@ -1354,239 +1315,268 @@ footer {
   }
 }
 
-// Pixel2
-@media (width: 411px) and (height: 731px) {
-  html body header .laptop {
-    max-width: 300px;
-    left: calc(50% - 150px);
-    bottom: 15%;
-  }
-
-  .fa-angle-double-down {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-}
-
-// iPhone 6/7/8
-@media (width: 375px) and (height: 667px) {
-  html body header .laptop {
-    bottom: 16%;
-  }
-}
-
-// iPhone 6/78 Plus
-@media (width: 414px) and (height: 736px) {
-  html body header .laptop {
-    max-width: 300px;
-    left: calc(50% - 150px);
-    bottom: 15%;
-  }
-}
-
-// iPhone X
-@media only screen
-    and (device-width : 375px)
-    and (device-height : 812px)
-    and (-webkit-device-pixel-ratio : 3) {
-      html body header 
-      .laptop {
-      bottom: 150px;
-      height: 400px;
-      width: 400px;
-      max-width: 310px;
-      left: calc(50% - 155px);
-        }
-      }
-
-// iPhone 5/SE
-@media (width: 320px) and (height: 568px) {
-  html body header .laptop {
-    max-width: 180px;
-    left: calc(50% - 90px);
-    bottom: 16%;
-  }
-}
-
-@media (width: 411px) and (height: 823px) {
-  html body header .laptop {
-    max-width: 324px;
-    width: 100%;
-    left: calc(50% - 162px);
-    bottom: 20%;
-  }
-}
-// iPad
-@media (width: 768px) and (height: 1024px) {
-  html body header {
+// iPhone 5
+@media screen and (device-aspect-ratio: 40/71) {
+  body .header {
     .main-header {
-      padding: 30px 10px 70px 10px;
-      left: 25%;
-      width: 70%;
-      top: 240px;
-      font-size: 2.5rem;
+      padding: 10px;
+      width: 75%;
+      left: 20%;
     }
 
     .desc-wrapper {
-      width: 50%;
+      width: 75%;
       left: 5%;
-      bottom: 42%;
-      padding: 70px 5% 50px 10px;
-      margin-left: 10px;
+      padding: 10px 0;
+    }
+    .laptop {
+      max-height: 170px;
+    }
+  }
+}
+
+// iPhoneX
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  body .header {
+    .main-header {
+      padding: 30px 20px 90px 20px;
+      width: 75%;
+      left: 20%;
+    }
+
+    .desc-wrapper {
+      width: 75%;
+      left: 5%;
+      padding: 80px 10px 50px 10px;
+    }
+
+    .laptop {
+      max-height: 320px;
+      bottom: 100px;
+    }
+  }
+}
+
+// iPad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body .header {
+    .main-header {
+      padding: 30px 20px 110px 20px;
+      width: 75%;
+      left: 20%;
+      top: 230px;
+    }
+
+    .desc-wrapper {
+      width: 75%;
+      left: 5%;
+      padding: 100px 10px 50px 10px;
+      bottom: 350px;
 
       .header-desc {
-        font-size: 0.8rem;
+        text-align: left;
+        margin-left: 30px;
       }
     }
 
     .laptop {
-      left: calc(50% - 180px);
-      max-height: 360px;
-      bottom: 60px;
+      max-height: 320px;
+      bottom: 100px;
     }
   }
 }
 
 // iPad Pro
-@media (width: 1024px) and (height: 1366px) {
-  html body header {
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body .header {
+    .triangle {
+      top: 40px;
+      left: 60px;
+    }
+
     .main-header {
-      padding: 70px 10px 140px 10px;
-      left: 30%;
+      padding: 80px 20px 160px 20px;
       width: 65%;
-      top: 250px;
-      font-size: 2.6rem;
+      left: 30%;
+      top: 230px;
     }
 
     .desc-wrapper {
-      width: 50%;
+      width: 65%;
       left: 5%;
-      bottom: 43%;
-      padding: 140px 5% 50px 10px;
-      margin-left: 10px;
+      padding: 130px 10px 50px 10px;
+      bottom: 550px;
+
+      .header-desc {
+        margin-left: 70px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .laptop {
+      max-height: 420px;
+      bottom: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  body header {
+    .laptop {
+      bottom: 100px;
+      max-height: 1475px;
+    }
+
+    .main-header {
+      padding: 80px 40px;
+    }
+
+    .desc-wrapper {
+      width: 40%;
+      bottom: 130px;
+      padding: 80px 30px;
+
+      .header-desc {
+        font-size: 1.6rem;
+      }
+    }
+
+    .triangle {
+      left: 100px;
+      top: -20px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  html {
+    font-size: 20px;
+    header {
+      .laptop {
+        bottom: 70px;
+        max-height: 345px;
+      }
+
+      .main-header {
+        padding: 80px 40px;
+      }
+
+      .desc-wrapper {
+        width: 40%;
+        bottom: 100px;
+        padding: 80px 30px;
+
+        .header-desc {
+          font-size: 0.9rem;
+        }
+      }
+
+      .triangle {
+        left: 100px;
+        top: -20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) and (orientation: landscape) {
+  header .triangle {
+    left: 50px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body header {
+    .laptop {
+      bottom: 20px;
+      max-height: 275px;
+      left: 44%;
+    }
+
+    .main-header {
+      width: 50%;
+      padding: 30px;
+      top: 26%;
+      font-weight: 500;
+    }
+
+    .desc-wrapper {
+      width: 40%;
+      left: 3%;
+      bottom: 10%;
+      padding: 80px 30px 20px 30px;
 
       .header-desc {
         font-size: 1rem;
       }
     }
-
-    .laptop {
-      left: calc(50% - 230px);
-      max-height: 460px;
-      bottom: 80px;
-    }
   }
 }
 
-// @media only screen 
-//   and (min-device-width: 375px) 
-//   and (max-device-width: 812px) 
-//   and (-webkit-min-device-pixel-ratio: 3) { 
-// html body header {
-//       background-color: red;
-//       .laptop {
-//         width: 100px;
-//       }
-//   }
-// }
+@media (max-width: 800px) and (orientation: landscape) {
+  html {
+    font-size: 18px;
 
+    body {
+      header {
+        .laptop {
+          bottom: 20px;
+          max-height: 265px;
+        }
 
-//Landscape
-
-@media (max-height: 423px) {
-   html body header {
-    .main-header {
-      padding: 20px 10px 40px 10px;
-      left: 35%;
-      width: 55%;
-      top: 60px;
-      font-size: 1.5rem;
-    }
-
-    .triangle {
-      top: -45px;
-      left: 25px;
-    }
-
-    .desc-wrapper {
-      display: inline-block;
-      width: 40%;
-      left: 12%;
-      bottom: 10%;
-      padding: 40px 5% 30px 10px;
-      margin-left: 10px;
-
-      .header-desc {
-        font-size: 0.7rem;
+        .main-header {
+          width: 60%;
+          top: 15%;
+          right: 50px;
+        }
       }
     }
-
-    .laptop {
-      left: 55%;
-      max-height: 200px;
-      bottom: 30px;
+    .about {
+      padding-bottom: 150px;
     }
   }
 }
 
-//Pixel2 landscape
-@media (max-height: 411px) {
-   html body header {
-    .fa-bars {
-      display: inline-block;
-    }
-    nav {
-      display: none;
-    }
-      .desc-wrapper {
-        bottom: 12%;
-        padding: 60px 5% 60px 10px; 
-    }
-  }
-}
+@media (max-width: 600px) and (orientation: landscape) {
+  html {
+    font-size: 18px;
 
-//iPhone 5/SE
-@media (max-height: 320px) {
-   html body header {
-    .fa-bars {
-      display: inline-block;
-    }
-    nav {
-      display: none;
-    }
-    .main-header {
-      padding: 10px 0 30px 0;
-    }
+    body {
+      header {
+        .main-header {
+          width: 50%;
+          padding: 20px;
+          top: 17%;
+          right: 65px;
+        }
 
-    .desc-wrapper {
-      width: 36%;
-      bottom: 13%;
-      left: 15%;
-      padding: 40px 5% 10px 10px; 
-    
-      .header-desc {
-        font-size: 0.6rem;
+        .desc-wrapper .header-desc {
+          font-size: 0.6rem;
+        }
+
+        .triangle {
+          left: 30px;
+          top: -50px;
+
+          &:after {
+            border-left: 30px solid transparent;
+            border-bottom: 30px solid #d6ce15;
+            border-top: 30px solid transparent;
+            border-right: 30px solid transparent;
+          }
+        }
       }
     }
-    .laptop {
-      max-width: 160px;
-
-    }
   }
 }
 
-//Galaxy s5
-@media (max-height: 360px) {
-   html body header {
-    .fa-bars {
-      display: inline-block;
-    }
-    nav {
-      display: none;
-    }
-      .desc-wrapper {
-        bottom: 12%;
-        padding: 30px 5% 30px 10px; 
+@media (max-width: 830px) and (max-height: 420px) {
+  html {
+    font-size: 12px;
+
+    body header .laptop {
+      max-height: 175px;
     }
   }
 }

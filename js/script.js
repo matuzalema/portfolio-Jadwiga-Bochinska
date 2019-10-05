@@ -43,18 +43,18 @@ $(document).ready(function() {
 const bar = document.querySelector(".hamburger");
 const navigation = document.querySelector(".top-nav");
 const linkNav = document.querySelectorAll(".nav-a");
-
+const liTag = document.querySelector("nav-li");
 
 bar.addEventListener("click", function() {
-  navigation.classList.remove("not-visible");
-});
-
-navigation.addEventListener("click", function(){
   navigation.classList.add("not-visible");
 });
 
-for(let i=0; i<linkNav.length; i++){
-  linkNav[i].addEventListener("click", function(){
-    navigation.classList.add("not-visible");
-  })
-}
+navigation.addEventListener("click", function() {
+  navigation.classList.add("not-visible");
+});
+
+// for (let i = 0; i < linkNav.length; i++) {
+//   linkNav[i].addEventListener("click", function() {
+//     navigation.classList.add("visible");
+//   });
+// }

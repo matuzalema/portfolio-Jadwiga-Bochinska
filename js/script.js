@@ -40,21 +40,20 @@ $(document).ready(function() {
 });
 
 // mobile nav
-const bar = document.querySelector(".hamburger");
-const navigation = document.querySelector(".top-nav");
-const linkNav = document.querySelectorAll(".nav-a");
-const liTag = document.querySelector("nav-li");
+const bar = document.querySelector(".hamburger-wrapper");
+const navigationLink = document.querySelectorAll("header>nav>ul>li>a");
+const topNav = document.querySelector(".top-nav");
 
-bar.addEventListener("click", function() {
-  navigation.classList.add("not-visible");
+bar.addEventListener("click", () => {
+  topNav.classList.add("flex");
 });
 
-navigation.addEventListener("click", function() {
-  navigation.classList.add("not-visible");
+topNav.addEventListener("click", function() {
+  topNav.classList.remove("flex");
 });
 
-// for (let i = 0; i < linkNav.length; i++) {
-//   linkNav[i].addEventListener("click", function() {
-//     navigation.classList.add("visible");
-//   });
-// }
+navigationLink.forEach(item => {
+  item.addEventListener("click", function() {
+    topNav.classList.remove("flex");
+  });
+});

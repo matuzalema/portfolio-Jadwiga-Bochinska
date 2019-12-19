@@ -33,7 +33,7 @@ $(document).ready(function() {
       {
         scrollTop: $(hash).offset().top
       },
-      1500
+      2000
     );
     return false;
   });

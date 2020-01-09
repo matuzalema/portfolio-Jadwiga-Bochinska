@@ -12,6 +12,9 @@
     <!-- ============================ header =========================================== -->
 
     <header class="header">
+      <!-- particles -->
+      <div id="particles-js"></div>
+
       <div class="hamburger-wrapper">
         <i class="fas fa-bars hamburger"></i>
       </div>
@@ -23,10 +26,36 @@
           <li><a class="nav-a" href="#contact">Kontakt</a></li>
         </ul>
       </nav>
-      <div class="traingle-wrapper">
+      <!-- <div class="traingle-wrapper">
         <div class="triangle"></div>
+      </div> -->
+      <!-- header animation -->
+      <div class="container">
+        <div class="sp-container">
+          <div class="sp-content">
+            <div class="sp-wrap sp-left">
+              <h2>
+                <span class="sp-top">Musisz zrealizować projekt i szukasz</span>
+                <span class="sp-mid">Front-End</span>
+                <span class="sp-bottom">Developera?</span>
+              </h2>
+            </div>
+            <div class="sp-wrap sp-right">
+              <h2>
+                <span class="sp-top">Kompetentny, solidny i pracowity </span>
+                <span class="sp-mid">Devloper</span>
+                <span class="sp-bottom">Zaprasza do kontaktu</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="sp-full">
+            <h2>Skontaktuj się już teraz !</h2>
+            <a class="button" href="#contact">kontakt</a>
+          </div>
+        </div>
       </div>
-      <div class="header-wrapper">
+      <!-- <div class="header-wrapper">
         <h1 class="main-header">Junior Front-End Developer</h1>
         <p class="light header-desc">
           Jeżeli musisz zrealizować projekt <br />
@@ -34,31 +63,50 @@
           - zapraszam do kontaktu<br />
         </p>
         <img class="laptop" src="images/triangle2.png" alt="" />
-      </div>
+      </div> -->
       <i class="fas fa-angle-double-down"></i>
     </header>
 
     <!-- ============================ about=========================================== -->
-
     <section class="about" id="about">
       <div class="container">
         <i class="far fa-user header-icon"></i>
         <h1 class="second-header">O mnie</h1>
         <div class="about-sections">
-          <p class="about-desc">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__front">
+                <h3 class="card__title">Witam</h3>
+                <p class="card__subtitle">Junior Front-End Developer</p>
+                <p class="card__text">
+                  Nazywam się Jadwiga Bochińska. Mieszkam w
+                  <span>Warszawie</span>. <br />Z pasją wykonuję strony Internetowe.
+                </p>
+                <button class="card__button">Więcej</button>
+              </div>
+
+              <div class="card__back">
+                <p class="card__body">
+                  Jestem osobą pełną pasji i entuzjazmu. Uwielbiam rozwiązywać zagadki logiczne, dlatego programowanie jest dla mnie czystą przyjemnością. Samodzielnie uczę się forntendu od kilku lat. Wykonywałam projekty indywidualnie a tekże grupowo. Znam jirę, git oraz sposoby utrzymywania czystego kodu. <br /> 
+                  <br />Obecne szukam pierwszej pracy lub stażu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <p class="about-desc">
             Nazywam się Jadwiga Bochińska. Mieszkam w <span>Warszawie</span>.
-            <br />Z pasją wykonuję projekty stron internetowych przy
-            wykorzystaniu najnowocześniejszych narzędzi programistycznych
-            (zobacz poniżej). Dodatkowo proponuję układ graficzny i dobór
+            <br />Z pasją wykonuję projekty stron Internetowych. Dodatkowo proponuję układ graficzny i dobór
             kolorystyczny pod konkretne potrzeby kontrahenta. Wykonuję również
             projekty wymagające większej ilości programistów. Szukasz osoby
             idealnie pasującej do Twojego projektu? Zadzwoń lub napisz do mnie.
-          </p>
-          <div class="img-about">
-            <img class="my-img" src="images/bigNoBackground.png" />
-            <div class="triangle-about-light"></div>
+          </p> -->
+          <!-- <div class="triangle-about">
             <div class="triangle-about-dark"></div>
-          </div>
+            <!-- <img class="my-img" src="images/bigNoBackground.png" /> -->
+          <!-- <div class="triangle-about-light"></div>
+          </div> -->
+          -->
         </div>
       </div>
     </section>
@@ -480,6 +528,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="node_modules/particles.js/particles.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

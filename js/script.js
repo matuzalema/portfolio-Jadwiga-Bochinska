@@ -179,20 +179,29 @@ particlesJS("particles-js", {
 
 /* ---- stats.js config ---- */
 
-var count_particles, stats, update;
-stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
+// var count_particles, stats, update;
+// stats = new Stats();
+// stats.setMode(0);
+// stats.domElement.style.position = "absolute";
+// stats.domElement.style.left = "0px";
+// stats.domElement.style.top = "0px";
+// document.body.appendChild(stats.domElement);
+// count_particles = document.querySelector(".js-count-particles");
+// update = function() {
+//   stats.begin();
+//   stats.end();
+//   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//   }
+//   requestAnimationFrame(update);
+// };
+// requestAnimationFrame(update);
+
+// // tiltepage-scroll
+// $(".main").tiltedpage_scroll({
+//   sectionContainer: "> section", // In case you don't want to use <section> tag, you can define your won CSS selector here
+//   angle: 50, // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+//   opacity: true, // You can toggle the opacity effect with this option. The default value is true
+//   scale: true, // You can toggle the scaling effect here as well. The default value is true.
+//   outAnimation: true // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+// });

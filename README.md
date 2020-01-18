@@ -1,1 +1,1 @@
-https://matuzalema.github.io/portfolio-Jadwiga-Bochinska/
+http://jadwigabochinska.pl/

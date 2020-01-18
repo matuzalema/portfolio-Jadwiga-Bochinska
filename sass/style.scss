@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,600,700,800,900|Monda&display=swap&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,500, 600,700,800,900|Monda|Roboto+Condensed&display=swap&subset=latin-ext");
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 
 * {
   box-sizing: border-box;
@@ -176,7 +176,7 @@ header {
       font-size: 1.9rem;
       font-family: "Roboto Condensed", sans-serif;
       color: $second-color;
-      font-family: 'Righteous', cursive; 
+      font-family: "Righteous", cursive;
 
       &::first-letter {
         color: $additional-color;
@@ -1390,5 +1390,3 @@ footer {
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
-
-

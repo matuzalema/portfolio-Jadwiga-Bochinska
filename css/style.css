@@ -315,9 +315,10 @@ header {
   opacity: 1;
   -ms-flex-order: 4;
       order: 4;
-  padding-top: 20px;
-  width: 60px;
-  border: 1px solid currentColor; }
+  padding: 10px 10px;
+  width: 90px;
+  border: 1px solid currentColor;
+  margin-top: 40px; }
 
 .card__body {
   transform: var(--level-two);
@@ -449,6 +450,7 @@ header {
       width: 100%;
       height: auto;
       max-height: 466px;
+      height: 100%;
       transition: 5s; }
       .projects .project-item .img-wrapper img {
         width: 100%;
@@ -457,9 +459,8 @@ header {
         max-height: 466px;
         -o-object-fit: contain;
            object-fit: contain;
-        outline: 2px solid #333333;
         outline-offset: -25px;
-        box-shadow: 0px 0px 10px #ccd9df; }
+        box-shadow: 0px 0px 10px #a8b5bb; }
       .projects .project-item .img-wrapper:hover .project-img-icons {
         opacity: 1;
         transition: 2s; }
@@ -542,8 +543,7 @@ header {
 
 .contact {
   background-color: #97979713;
-  padding-bottom: 50px;
-  padding: 50px 0; }
+  padding: 50px 0 0 0; }
   .contact .contact-media {
     display: -ms-flexbox;
     display: flex;
